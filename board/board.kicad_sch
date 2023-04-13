@@ -5,7 +5,7 @@
   (paper "A4")
 
   (title_block
-    (title "OptiREX_DevBoard")
+    (title "ProjectOptics_DevBoard")
     (date "2023-03-26")
     (rev "5")
     (company "Developed by Molganov A.A")
