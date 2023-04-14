@@ -1,0 +1,76 @@
+(ExpressProject "board"
+  (ProjectVersion "19981106")
+  (SoftwareVersion "17.4-2019 P001 (3823098) [10/7/2019]-[04/13/23]")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File "c:\users\user\downloads\stm32h750vbt6\stm32h750vbt6.olb"
+        (Type "Schematic Library"))
+      (File "c:\users\user\downloads\stm32f411ceu6\stm32f411ceu6.olb"
+        (Type "Schematic Library")))
+    ("Allegro Netlist Directory" "allegro")
+    (DOCKED "TRUE")
+    (DOCKING_POSITION "59420")
+    (NoModify)
+    (File ".\board.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    ("Allegro Netlist Output Board File" ".\allegro\board.brd"))
+  (Folder "Layout"
+    (File ".\allegro\board.brd"
+      (Type "Board File")
+      (OutputBoard ".\allegro\board.brd")
+      (NetListPath ".\allegro")
+      (ActiveBoard "1")))
+  (Folder "Outputs"
+    (Sort User)
+    (File ".\board_core_eng bill of materials.bom"
+      (Type "Report")
+      (DisplayName "BOARD_CORE_ENG BILL OF MATERIALS.BOM"))
+    (File ".\allegro\pstxnet.dat"
+      (Type "Report")
+      (DisplayName "pstxnet.dat"))
+    (File ".\allegro\pstxprt.dat"
+      (Type "Report")
+      (DisplayName "pstxprt.dat"))
+    (File ".\allegro\pstchip.dat"
+      (Type "Report")
+      (DisplayName "pstchip.dat")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles")
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (Folder "Logs")
+  (MPSSessionName "User")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources" "D:\.WORKSHOP\DIPLOMA\OPTIREX\BOARD\board.dsn")
+      (Path "Design Resources" "D:\.WORKSHOP\DIPLOMA\OPTIREX\BOARD\board.dsn"
+         "SCHEMATIC1")
+      (Path "Design Resources" "Library")
+      (Path "Layout")
+      (Select "Design Resources" "D:\.WORKSHOP\DIPLOMA\OPTIREX\BOARD\board.dsn"
+         "SCHEMATIC1" "PAGE1"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 0 195 0 443"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1119 24 461")
+        (Scroll "-128 0")
+        (Zoom "30")
+        (Occurrence "/"))
+      (Path "D:\.WORKSHOP\DIPLOMA\OPTIREX\BOARD\BOARD.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1")))
+  (PartMRUSelector))

@@ -1,0 +1,8 @@
+Item Number	Quantity	Value	Description	Part Number	Part Reference
+1	1	CON3			J2
+2	1	CON4			J5
+3	1	CON2			J6
+4	1	CON4			J7
+5	1	10k			R1
+6	1	STM32F411CEU6			U1
+7	1	STM32H750VBT6			U2

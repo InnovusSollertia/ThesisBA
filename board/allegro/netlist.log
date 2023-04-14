@@ -1,0 +1,31 @@
+{ Using PSTWRITER 17.4.0 d001Apr-13-2023 at 11:27:43 }
+
+#1 WARNING(ORCAP-36042): Pin "VSS" is renamed to "VSS#10" as visible power pin of same name already exists in Package STM32H750VBT6-1 , U10-1: SCHEMATIC1, PAGE1 (416.56, 20.32).
+#2 WARNING(ORCAP-36042): Pin "VDD" is renamed to "VDD#11" as visible power pin of same name already exists in Package STM32H750VBT6-1 , U10-1: SCHEMATIC1, PAGE1 (416.56, 20.32).
+#3 WARNING(ORCAP-36042): Pin "VSS" is renamed to "VSS#26" as visible power pin of same name already exists in Package STM32H750VBT6-1 , U10-1: SCHEMATIC1, PAGE1 (416.56, 20.32).
+#4 WARNING(ORCAP-36042): Pin "VDD" is renamed to "VDD#27" as visible power pin of same name already exists in Package STM32H750VBT6-1 , U10-1: SCHEMATIC1, PAGE1 (416.56, 20.32).
+#5 WARNING(ORCAP-36042): Pin "VCAP" is renamed to "VCAP#48" as visible power pin of same name already exists in Package STM32H750VBT6-1 , U10-1: SCHEMATIC1, PAGE1 (416.56, 20.32).
+#6 WARNING(ORCAP-36042): Pin "VSS" is renamed to "VSS#49" as visible power pin of same name already exists in Package STM32H750VBT6-1 , U10-1: SCHEMATIC1, PAGE1 (416.56, 20.32).
+#7 WARNING(ORCAP-36042): Pin "VDD" is renamed to "VDD#50" as visible power pin of same name already exists in Package STM32H750VBT6-1 , U10-1: SCHEMATIC1, PAGE1 (416.56, 20.32).
+#8 WARNING(ORCAP-36042): Pin "VCAP" is renamed to "VCAP#73" as visible power pin of same name already exists in Package STM32H750VBT6-1 , U10-1: SCHEMATIC1, PAGE1 (416.56, 20.32).
+#9 WARNING(ORCAP-36042): Pin "VSS" is renamed to "VSS#74" as visible power pin of same name already exists in Package STM32H750VBT6-1 , U10-1: SCHEMATIC1, PAGE1 (416.56, 20.32).
+#10 WARNING(ORCAP-36042): Pin "VDD" is renamed to "VDD#75" as visible power pin of same name already exists in Package STM32H750VBT6-1 , U10-1: SCHEMATIC1, PAGE1 (416.56, 20.32).
+#11 WARNING(ORCAP-36042): Pin "VSS" is renamed to "VSS#99" as visible power pin of same name already exists in Package STM32H750VBT6-1 , U10-1: SCHEMATIC1, PAGE1 (416.56, 20.32).
+#12 WARNING(ORCAP-36042): Pin "VDD" is renamed to "VDD#100" as visible power pin of same name already exists in Package STM32H750VBT6-1 , U10-1: SCHEMATIC1, PAGE1 (416.56, 20.32).
+#13 WARNING(ORCAP-36042): Pin "VSS" is renamed to "VSS#23" as visible power pin of same name already exists in Package STM32F411CEU6 , U5: SCHEMATIC1, PAGE1 (149.86, 27.94).
+#14 WARNING(ORCAP-36042): Pin "VDD" is renamed to "VDD#24" as visible power pin of same name already exists in Package STM32F411CEU6 , U5: SCHEMATIC1, PAGE1 (149.86, 27.94).
+#15 WARNING(ORCAP-36042): Pin "VSS" is renamed to "VSS#35" as visible power pin of same name already exists in Package STM32F411CEU6 , U5: SCHEMATIC1, PAGE1 (149.86, 27.94).
+#16 WARNING(ORCAP-36042): Pin "VDD" is renamed to "VDD#36" as visible power pin of same name already exists in Package STM32F411CEU6 , U5: SCHEMATIC1, PAGE1 (149.86, 27.94).
+#17 WARNING(ORCAP-36042): Pin "VSS" is renamed to "VSS#47" as visible power pin of same name already exists in Package STM32F411CEU6 , U5: SCHEMATIC1, PAGE1 (149.86, 27.94).
+#18 WARNING(ORCAP-36042): Pin "VDD" is renamed to "VDD#48" as visible power pin of same name already exists in Package STM32F411CEU6 , U5: SCHEMATIC1, PAGE1 (149.86, 27.94).
+#19 WARNING(ORCAP-36042): Pin "VSS" is renamed to "VSS#49" as visible power pin of same name already exists in Package STM32F411CEU6 , U5: SCHEMATIC1, PAGE1 (149.86, 27.94).
+INFO(ORCAP-36080): Scanning netlist files ...
+
+Loading... D:\.WORKSHOP\DIPLOMA\OPTIREX\BOARD\allegro\pstchip.dat
+
+Loading... D:\.WORKSHOP\DIPLOMA\OPTIREX\BOARD\allegro\pstchip.dat
+
+Loading... D:\.WORKSHOP\DIPLOMA\OPTIREX\BOARD\allegro\pstxprt.dat
+
+Loading... D:\.WORKSHOP\DIPLOMA\OPTIREX\BOARD\allegro\pstxnet.dat
+packaging the design view...

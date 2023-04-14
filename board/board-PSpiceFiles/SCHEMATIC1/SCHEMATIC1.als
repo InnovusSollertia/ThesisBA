@@ -1,0 +1,5 @@
+.ALIASES
+R_R1            R1(1=N04124 2=N04056 ) CN @BOARD.SCHEMATIC1(sch_1):INS3477@ANALOG.R.Normal(chips)
+_    _(GND=GND)
+_    _(VCC=VCC)
+.ENDALIASES

@@ -1,0 +1,142 @@
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   1  |
+|------------------------------------------------------------------------------|
+|  D:/.workshop/Diploma/OptiREX/board/allegro/board.brd                        |
+|                                                    Thu Apr 13 10:01:37 2023  |
+|------------------------------------------------------------------------------|
+| NET CHANGES                                                                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   net  name |  type of change |                net     pins                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+  GND          pins ADDED TO this new net
+                                 J2.1           J5.1           J6.2           
+                                 J7.1           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N03605       pins ADDED TO this new net
+                                 J2.2           U2.22          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N03840       pins ADDED TO this new net
+                                 J5.3           U2.95          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N03861       pins ADDED TO this new net
+                                 J5.2           U2.96          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N04056       pins ADDED TO this new net
+                                 J6.1           R1.2           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N04124       pins ADDED TO this new net
+                                 R1.1           U1.30          U1.36          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N04558       pins ADDED TO this new net
+                                 J7.3           U1.21          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N04576       pins ADDED TO this new net
+                                 J7.2           U1.39          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  VBAT         pins ADDED TO this new net
+                                 U1.1           U2.6           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  VCAP         pins ADDED TO this new net
+                                 U2.48          U2.73          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  VCAP_1       pins ADDED TO this new net
+                                 U1.22          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  VCC          pins ADDED TO this new net
+                                 J2.3           J5.4           J7.4           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  VDD          pins ADDED TO this new net
+                                 U1.24          U1.48          U2.11          
+                                 U2.27          U2.50          U2.75          
+                                 U2.100         
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  VDDA         pins ADDED TO this new net
+                                 U2.21          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   2  |
+|------------------------------------------------------------------------------|
+|  D:/.workshop/Diploma/OptiREX/board/allegro/board.brd                        |
+|                                                    Thu Apr 13 10:01:37 2023  |
+|------------------------------------------------------------------------------|
+| NET CHANGES                                                                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   net  name |  type of change |                net     pins                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+  VREF+        pins ADDED TO this new net
+                                 U1.9           U2.20          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  VSS          pins ADDED TO this new net
+                                 U1.23          U1.35          U1.47          
+                                 U1.49          U2.10          U2.26          
+                                 U2.49          U2.74          U2.99          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  VSSA         pins ADDED TO this new net
+                                 U1.8           U2.19          
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   3  |
+|------------------------------------------------------------------------------|
+|  D:/.workshop/Diploma/OptiREX/board/allegro/board.brd                        |
+|                                                    Thu Apr 13 10:01:37 2023  |
+|------------------------------------------------------------------------------|
+| COMPONENT DEFINITION added to design                                         |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|    device type                                                               |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ CON2_CONN2_770966-2_CON2
+ CON3_CONN3_770966-3_CON3
+ CON4_CONN4_770966-4_CON4
+ R_AXRC05_10K
+ STM32F411CEU6_QFN50P700X700X60-
+ STM32H750VBT6_QFP50P1600X1600X1
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   4  |
+|------------------------------------------------------------------------------|
+|  D:/.workshop/Diploma/OptiREX/board/allegro/board.brd                        |
+|                                                    Thu Apr 13 10:01:37 2023  |
+|------------------------------------------------------------------------------|
+| COMPONENTS ADDED to design                                                   |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|    ref des        |    device type                                           |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ J2                  CON3_CONN3_770966-3_CON3 
+ J5                  CON4_CONN4_770966-4_CON4 
+ J6                  CON2_CONN2_770966-2_CON2 
+ J7                  CON4_CONN4_770966-4_CON4 
+ R1                  R_AXRC05_10K          
+ U1                  STM32F411CEU6_QFN50P700X700X60- 
+ U2                  STM32H750VBT6_QFP50P1600X1600X1 
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   5  |
+|------------------------------------------------------------------------------|
+|  D:/.workshop/Diploma/OptiREX/board/allegro/board.brd                        |
+|                                                    Thu Apr 13 10:01:37 2023  |
+|------------------------------------------------------------------------------|
+| SLOT PROPERTIES added to design                                              |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   slot_id    |   x   |   y   |   property   |             value              |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ J2.3                           PRIM_FILE      .\pstchip.dat
+ J5.4                           PRIM_FILE      .\pstchip.dat
+ J6.2                           PRIM_FILE      .\pstchip.dat
+ J7.4                           PRIM_FILE      .\pstchip.dat
+ R1.2                           PRIM_FILE      .\pstchip.dat
+ U1.8                           PRIM_FILE      .\pstchip.dat
+ U2.19                          PRIM_FILE      .\pstchip.dat
+ U2.39                          PRIM_FILE      .\pstchip.dat
+ U2.56                          PRIM_FILE      .\pstchip.dat
+ U2.66                          PRIM_FILE      .\pstchip.dat
+ U2.96                          PRIM_FILE      .\pstchip.dat
+|------------------------------------------------------------------------------|
+|       Nets changed          :      48                                        |
+|       Comp definitions added:       6                                        |
+|       Components added      :       7                                        |
+|       Slot property added   :      11                                        |
+|                                                                              |
+|   Total ECO changes reported:      72                                        |
+|------------------------------------------------------------------------------|

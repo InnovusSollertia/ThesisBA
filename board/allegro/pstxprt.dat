@@ -1,0 +1,150 @@
+FILE_TYPE = EXPANDEDPARTLIST;
+{ Using PSTWRITER 17.4.0 d001Apr-13-2023 at 11:27:45 }
+DIRECTIVES
+ PST_VERSION='PST_HDL_CENTRIC_VERSION_0';
+ ROOT_DRAWING='BOARD';
+ POST_TIME='Oct  7 2019 04:16:49';
+ SOURCE_TOOL='CAPTURE_WRITER';
+END_DIRECTIVES;
+
+PART_NAME
+ J10 'CON2_CONN2_770966-2_CON2':;
+
+SECTION_NUMBER 1
+ '@BOARD.SCHEMATIC1(SCH_1):INS6840@CONNECTOR.CON2.NORMAL(CHIPS)':
+ C_PATH='@board.schematic1(sch_1):ins6840@connector.\con2.normal\(chips)',
+ P_PATH='@board.schematic1(sch_1):page1_ins6840@connector.\con2.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J11 'CON2_CONN2_770966-2_CON2':;
+
+SECTION_NUMBER 1
+ '@BOARD.SCHEMATIC1(SCH_1):INS6856@CONNECTOR.CON2.NORMAL(CHIPS)':
+ C_PATH='@board.schematic1(sch_1):ins6856@connector.\con2.normal\(chips)',
+ P_PATH='@board.schematic1(sch_1):page1_ins6856@connector.\con2.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J12 'CON2_CONN2_770966-2_CON2':;
+
+SECTION_NUMBER 1
+ '@BOARD.SCHEMATIC1(SCH_1):INS6872@CONNECTOR.CON2.NORMAL(CHIPS)':
+ C_PATH='@board.schematic1(sch_1):ins6872@connector.\con2.normal\(chips)',
+ P_PATH='@board.schematic1(sch_1):page1_ins6872@connector.\con2.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J13 'CON2_CONN2_770966-2_CON2':;
+
+SECTION_NUMBER 1
+ '@BOARD.SCHEMATIC1(SCH_1):INS6888@CONNECTOR.CON2.NORMAL(CHIPS)':
+ C_PATH='@board.schematic1(sch_1):ins6888@connector.\con2.normal\(chips)',
+ P_PATH='@board.schematic1(sch_1):page1_ins6888@connector.\con2.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J6 'CON2_CONN2_770966-2_CON2':;
+
+SECTION_NUMBER 1
+ '@BOARD.SCHEMATIC1(SCH_1):INS3937@CONNECTOR.CON2.NORMAL(CHIPS)':
+ C_PATH='@board.schematic1(sch_1):ins3937@connector.\con2.normal\(chips)',
+ P_PATH='@board.schematic1(sch_1):page1_ins3937@connector.\con2.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J8 'CON2_CONN2_770966-2_CON2':;
+
+SECTION_NUMBER 1
+ '@BOARD.SCHEMATIC1(SCH_1):INS6808@CONNECTOR.CON2.NORMAL(CHIPS)':
+ C_PATH='@board.schematic1(sch_1):ins6808@connector.\con2.normal\(chips)',
+ P_PATH='@board.schematic1(sch_1):page1_ins6808@connector.\con2.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J9 'CON2_CONN2_770966-2_CON2':;
+
+SECTION_NUMBER 1
+ '@BOARD.SCHEMATIC1(SCH_1):INS6824@CONNECTOR.CON2.NORMAL(CHIPS)':
+ C_PATH='@board.schematic1(sch_1):ins6824@connector.\con2.normal\(chips)',
+ P_PATH='@board.schematic1(sch_1):page1_ins6824@connector.\con2.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R1 'R_AXRC05_10K':;
+
+SECTION_NUMBER 1
+ '@BOARD.SCHEMATIC1(SCH_1):INS3477@ANALOG.R.NORMAL(CHIPS)':
+ C_PATH='@board.schematic1(sch_1):ins3477@analog.\r.normal\(chips)',
+ P_PATH='@board.schematic1(sch_1):page1_ins3477@analog.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ U10 'STM32H750VBT6_QFP50P1600X1600X160-100N_STM32H750VBT6':;
+
+SECTION_NUMBER 1
+ '@BOARD.SCHEMATIC1(SCH_1):INS11544@STM32H750VBT6.STM32H750VBT6-1.NORMAL(CHIPS)':
+ C_PATH='@board.schematic1(sch_1):ins11544@stm32h750vbt6.\stm32h750vbt6-1.normal\(chips)',
+ P_PATH='@board.schematic1(sch_1):page1_ins11544@stm32h750vbt6.\stm32h750vbt6-1.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='-1';
+
+PART_NAME
+ U5 'STM32F411CEU6_QFN50P700X700X60-49N_STM32F411CEU6':;
+
+SECTION_NUMBER 1
+ '@BOARD.SCHEMATIC1(SCH_1):INS10270@STM32F411CEU6.STM32F411CEU6.NORMAL(CHIPS)':
+ C_PATH='@board.schematic1(sch_1):ins10270@stm32f411ceu6.\stm32f411ceu6.normal\(chips)',
+ P_PATH='@board.schematic1(sch_1):page1_ins10270@stm32f411ceu6.\stm32f411ceu6.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ U6 'STM32H750VBT6_QFP50P1600X1600X160-100N_STM32H750VBT6':;
+
+SECTION_NUMBER 5
+ '@BOARD.SCHEMATIC1(SCH_1):INS10657@STM32H750VBT6.STM32H750VBT6-5.NORMAL(CHIPS)':
+ C_PATH='@board.schematic1(sch_1):ins10657@stm32h750vbt6.\stm32h750vbt6-5.normal\(chips)',
+ P_PATH='@board.schematic1(sch_1):page1_ins10657@stm32h750vbt6.\stm32h750vbt6-5.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='-5';
+
+PART_NAME
+ U7 'STM32H750VBT6_QFP50P1600X1600X160-100N_STM32H750VBT6':;
+
+SECTION_NUMBER 4
+ '@BOARD.SCHEMATIC1(SCH_1):INS10738@STM32H750VBT6.STM32H750VBT6-4.NORMAL(CHIPS)':
+ C_PATH='@board.schematic1(sch_1):ins10738@stm32h750vbt6.\stm32h750vbt6-4.normal\(chips)',
+ P_PATH='@board.schematic1(sch_1):page1_ins10738@stm32h750vbt6.\stm32h750vbt6-4.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='-4';
+
+PART_NAME
+ U8 'STM32H750VBT6_QFP50P1600X1600X160-100N_STM32H750VBT6':;
+
+SECTION_NUMBER 3
+ '@BOARD.SCHEMATIC1(SCH_1):INS10819@STM32H750VBT6.STM32H750VBT6-3.NORMAL(CHIPS)':
+ C_PATH='@board.schematic1(sch_1):ins10819@stm32h750vbt6.\stm32h750vbt6-3.normal\(chips)',
+ P_PATH='@board.schematic1(sch_1):page1_ins10819@stm32h750vbt6.\stm32h750vbt6-3.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='-3';
+
+PART_NAME
+ U9 'STM32H750VBT6_QFP50P1600X1600X160-100N_STM32H750VBT6':;
+
+SECTION_NUMBER 2
+ '@BOARD.SCHEMATIC1(SCH_1):INS10945@STM32H750VBT6.STM32H750VBT6-2.NORMAL(CHIPS)':
+ C_PATH='@board.schematic1(sch_1):ins10945@stm32h750vbt6.\stm32h750vbt6-2.normal\(chips)',
+ P_PATH='@board.schematic1(sch_1):page1_ins10945@stm32h750vbt6.\stm32h750vbt6-2.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='-2';
+
+END.
