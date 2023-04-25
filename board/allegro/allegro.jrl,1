@@ -1,534 +1,778 @@
-\t (00:04:29) allegro 17.4 P001 Windows SPB 64-bit Edition
-\t (00:04:29)     Journal start - Thu Apr 13 10:06:12 2023
-\t (00:04:29)         Host=DESKTOP-9KIRPLL User=User Pid=10396 CPUs=4
-\t (00:04:29) CmdLine= allegro.exe -proj d:/.workshop/diploma/optirex/board/board.opj D:/.workshop/Diploma/OptiREX/board/allegro/board.brd
-\t (00:04:29) 
-   (00:04:30) Loading axlcore.cxt 
-\t (00:04:33) Opening existing design...
-\i (00:04:34) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged board
-\d (00:04:34) Design opened: D:/.workshop/Diploma/OptiREX/board/allegro/board.brd
-\i (00:04:37) trapsize 14056
-\i (00:04:38) trapsize 14747
-\i (00:04:39) trapsize 15065
-\i (00:04:40) trapsize 14056
-\i (00:04:40) trapsize 22788
-\i (00:04:48) trapsize 14120
-\t (00:05:00) > Sending response DoneOpenBoard
-\i (00:05:00) generaledit 
-\i (00:05:46) QtSignal CWorkFlowWidget CWorkFlowWidget_tree selectionChanged Setup
-\i (00:05:46) QtSignal CWorkFlowWidget CWorkFlowWidget_tree clicked Setup
-\i (00:05:47) QtSignal CWorkFlowWidget CWorkFlowWidget_tree selectionChanged Setup
-\i (00:05:47) QtSignal CWorkFlowWidget CWorkFlowWidget_tree clicked Setup
-\i (00:05:48) QtSignal CWorkFlowWidget CWorkFlowWidget_tree selectionChanged Utilities
-\i (00:05:48) QtSignal CWorkFlowWidget CWorkFlowWidget_tree clicked Utilities
-\i (00:05:49) QtSignal CWorkFlowWidget CWorkFlowWidget_tree selectionChanged "Manufacturing Deliverables"
-\i (00:05:49) QtSignal CWorkFlowWidget CWorkFlowWidget_tree clicked "Manufacturing Deliverables"
-\i (00:05:49) QtSignal CWorkFlowWidget CWorkFlowWidget_tree selectionChanged "Manufacturing Preparation"
-\i (00:05:49) QtSignal CWorkFlowWidget CWorkFlowWidget_tree clicked "Manufacturing Preparation"
-\i (00:05:50) QtSignal CWorkFlowWidget CWorkFlowWidget_tree selectionChanged Interconnect
-\i (00:05:50) QtSignal CWorkFlowWidget CWorkFlowWidget_tree clicked Interconnect
-\i (00:05:50) QtSignal CWorkFlowWidget CWorkFlowWidget_tree selectionChanged Constraints
-\i (00:05:50) QtSignal CWorkFlowWidget CWorkFlowWidget_tree clicked Constraints
-\i (00:05:51) QtSignal CWorkFlowWidget CWorkFlowWidget_tree selectionChanged Placement
-\i (00:05:51) QtSignal CWorkFlowWidget CWorkFlowWidget_tree clicked Placement
-\i (00:05:51) QtSignal CWorkFlowWidget CWorkFlowWidget_tree selectionChanged "Database Preparation"
-\i (00:05:51) QtSignal CWorkFlowWidget CWorkFlowWidget_tree clicked "Database Preparation"
-\i (00:05:52) QtSignal CWorkFlowWidget CWorkFlowWidget_tree selectionChanged Setup
-\i (00:05:52) QtSignal CWorkFlowWidget CWorkFlowWidget_tree clicked Setup
-\t (00:08:23) > DoPhysicalNetlistGenerate message received
-\t (00:08:23) > Generating physical netlist...
-\t (00:08:23) Starting genfeedformat...
-\t (00:08:28) > Sending response DonePhysicalNetlistGeneration
-\t (00:08:28) > Physical Netlist Generated
-\i (00:08:28) xrefdes J7 
-\t (00:08:28) Can not select unplaced component J7.
-\t (00:08:28) Can not select unplaced component J7.
-\i (00:08:28) xname_flush '!' 
-\t (00:08:31) > DoPullSchematic message received
-\t (00:08:31) > Pulling schematic...
-\t (00:08:31) Starting Cadence Logic Import...
-\w (00:08:38) WARNING(SPMHGE-269): netrev had warnings, use Viewlog to review the log file.
-\t (00:08:38) Opening existing design...
-\i (00:08:39) trapsize 14120
-\t (00:08:39) > Sending response DonePullSchematic
-\t (00:08:39) > Schematic pulled successfully
-\i (00:08:47) setwindow text
-\i (00:08:47) close
-\i (00:09:02) QtSignal CWorkFlowWidget CWorkFlowWidget_tree selectionChanged Setup "Design Parameters"
-\i (00:09:02) QtSignal CWorkFlowWidget CWorkFlowWidget_tree clicked Setup "Design Parameters"
-\i (00:09:02) prmed 
-\i (00:09:05) setwindow form.prmedit
-\i (00:09:05) FORM prmedit design  
-\i (00:09:08) FORM prmedit display  
-\i (00:09:10) FORM prmedit cancel  
-\i (00:09:11) setwindow pcb
-\i (00:09:11) generaledit 
-\i (00:09:39) QtSignal CWorkFlowWidget CWorkFlowWidget_tree selectionChanged Setup "Design Parameters"
-\i (00:09:39) QtSignal CWorkFlowWidget CWorkFlowWidget_tree clicked Setup "Design Parameters"
-\i (00:09:39) prmed 
-\i (00:09:41) QtSignal CWorkFlowWidget CWorkFlowWidget_tree selectionChanged "Database Preparation" +
-\i (00:09:41) QtSignal "Board Outline"
-\i (00:09:41) QtSignal CWorkFlowWidget CWorkFlowWidget_tree clicked "Database Preparation" "Board Outline"
-\i (00:09:43) QtSignal CWorkFlowWidget CWorkFlowWidget_tree selectionChanged "Database Preparation" +
-\i (00:09:43) QtSignal "Board Outline" Create Automatically
-\i (00:09:43) QtSignal CWorkFlowWidget CWorkFlowWidget_tree clicked "Database Preparation" "Board Outline" +
-\i (00:09:43) QtSignal Create Automatically
-\i (00:09:43) board outline 
-   (00:09:44) Loading floor.cxt 
-   (00:09:44) Loading fputil.cxt 
-\i (00:09:49) setwindow form.fpbdoutline
-\i (00:09:49) FORM fpbdoutline done  
-\i (00:09:50) setwindow pcb
-\i (00:09:50) generaledit 
-\i (00:09:56) pick grid 9262.46 14571.43
-\t (00:09:56) last pick:  9300.00 14600.00
-\i (00:09:58) drag_start grid 7313.95 14599.67
-\i (00:09:58) drag_stop 26234.22 2428.57
-\i (00:10:01) QtSignal CWorkFlowWidget CWorkFlowWidget_tree selectionChanged "Database Preparation" +
-\i (00:10:01) QtSignal "Board Outline" Create Manual
-\i (00:10:01) QtSignal CWorkFlowWidget CWorkFlowWidget_tree clicked "Database Preparation" "Board Outline" +
-\i (00:10:01) QtSignal Create Manual
-\i (00:10:01) FORM mini class BOARD GEOMETRY 
-\i (00:10:01) FORM mini subclass DESIGN_OUTLINE 
-\i (00:10:01) shape add 
-\i (00:10:01) trapsize 14120
-\i (00:10:03) pick grid 5393.69 14317.28
-\t (00:10:03) last pick:  5400.00 14300.00
-\t (00:10:05) last pick:  26234.22 14345.51
-\w (00:10:05) WARNING(SPMHUT-40): Pick is outside the extent of the drawing ... pick again.
-\t (00:10:09) last pick:  27815.61 14317.28
-\w (00:10:09) WARNING(SPMHUT-40): Pick is outside the extent of the drawing ... pick again.
-\t (00:10:11) last pick:  27533.22 13950.17
-\w (00:10:11) WARNING(SPMHUT-40): Pick is outside the extent of the drawing ... pick again.
-\t (00:10:12) last pick:  25810.63 8132.89
-\w (00:10:12) WARNING(SPMHUT-40): Pick is outside the extent of the drawing ... pick again.
-\i (00:10:14) pick grid 5506.64 3671.10
-\t (00:10:14) last pick:  5500.00 3700.00
-\t (00:10:17) last pick:  25980.07 3529.90
-\w (00:10:17) WARNING(SPMHUT-40): Pick is outside the extent of the drawing ... pick again.
-\t (00:10:19) last pick:  26686.05 4038.21
-\w (00:10:19) WARNING(SPMHUT-40): Pick is outside the extent of the drawing ... pick again.
-\t (00:10:21) last pick:  26657.81 14571.43
-\w (00:10:21) WARNING(SPMHUT-40): Pick is outside the extent of the drawing ... pick again.
-\t (00:10:29) last pick:  21631.23 3897.01
-\w (00:10:29) WARNING(SPMHUT-40): Pick is outside the extent of the drawing ... pick again.
-\t (00:10:31) last pick:  21631.23 3897.01
-\w (00:10:31) WARNING(SPMHUT-40): Pick is outside the extent of the drawing ... pick again.
-\i (00:10:34) prepopup 21461.79 3840.53
-\i (00:10:35) done 
-\i (00:10:35) generaledit 
-\i (00:10:37) pick grid 5619.60 10561.46
-\t (00:10:37) last pick:  5600.00 10600.00
-\i (00:10:37) zoom in 1 
-\i (00:10:37) setwindow pcb
-\i (00:10:37) zoom in 5111.30 9290.70
-\i (00:10:37) trapsize 7060
-\i (00:10:37) zoom in 1 
-\i (00:10:37) setwindow pcb
-\i (00:10:37) zoom in 5097.18 9248.34
-\i (00:10:37) trapsize 3530
-\i (00:10:37) zoom in 1 
-\i (00:10:37) setwindow pcb
-\i (00:10:37) zoom in 5090.12 9213.05
-\i (00:10:37) trapsize 1765
-\i (00:10:38) zoom in 1 
-\i (00:10:38) setwindow pcb
-\i (00:10:38) zoom in 5347.81 9110.68
-\i (00:10:38) trapsize 882
-\i (00:10:38) zoom in 1 
-\i (00:10:38) setwindow pcb
-\i (00:10:38) zoom in 5536.66 9025.97
-\i (00:10:38) trapsize 441
-\i (00:10:39) drag_start grid 5497.83 9034.80
-\i (00:10:39) move 
-\t (00:10:39) last pick:  5500.00 9000.00
-\t (00:10:39) Element has no origin, using pick.
-\t (00:10:39) Pick new location for the element(s).
-\i (00:10:39) drag_stop grid 5556.07 9032.15
-\i (00:10:40) generaledit 
-\i (00:10:40) pick grid 5496.95 9040.98
-\t (00:10:40) last pick:  5500.00 9000.00
-\i (00:10:42) pick grid 5599.32 9073.63
-\t (00:10:42) last pick:  5600.00 9100.00
-\i (00:10:42) prepopup 5599.32 9073.63
-\i (00:10:46) pick grid 5642.56 9235.12
-\t (00:10:46) last pick:  5600.00 9200.00
-\i (00:10:46) drag_start grid 5418.41 9213.94
-\i (00:10:47) drag_stop 5736.10 9063.04
-\i (00:10:50) pick grid 5598.43 9001.27
-\t (00:10:50) last pick:  5600.00 9000.00
-\i (00:10:51) pick grid 5598.43 9001.27
-\t (00:10:51) last pick:  5600.00 9000.00
-\i (00:10:52) pick grid 5498.71 9019.80
-\t (00:10:52) last pick:  5500.00 9000.00
-\i (00:10:59) QtSignal CWorkFlowWidget CWorkFlowWidget_tree selectionChanged "Database Preparation" +
-\i (00:10:59) QtSignal "Board Outline" Create Automatically
-\i (00:10:59) QtSignal CWorkFlowWidget CWorkFlowWidget_tree clicked "Database Preparation" "Board Outline" +
-\i (00:10:59) QtSignal Create Automatically
-\i (00:10:59) board outline 
-\i (00:11:01) setwindow form.fpbdoutline
-\i (00:11:01) FORM fpbdoutline fpbocreate YES 
-\i (00:11:02) fillin yes 
-\i (00:11:04) fillin confirm
-\i (00:11:04) setwindow pcb
-\i (00:11:04) zoom out 1 
-\i (00:11:04) setwindow pcb
-\i (00:11:04) zoom out 5926.71 8950.08
-\i (00:11:04) trapsize 882
-\i (00:11:05) zoom out 1 
-\i (00:11:05) setwindow pcb
-\i (00:11:05) zoom out 5926.72 8950.08
-\i (00:11:05) trapsize 1765
-\i (00:11:11) setwindow form.fpbdoutline
-\i (00:11:11) FORM fpbdoutline apply  
-\i (00:11:13) fillin confirm
-\i (00:11:14) FORM fpbdoutline done  
-\i (00:11:15) setwindow pcb
-\i (00:11:15) generaledit 
-\i (00:11:16) zoom out 1 
-\i (00:11:16) setwindow pcb
-\i (00:11:16) zoom out 5626.67 8978.33
-\i (00:11:16) trapsize 3530
-\i (00:11:16) zoom out 1 
-\i (00:11:16) setwindow pcb
-\i (00:11:16) zoom out 5845.53 9204.24
-\i (00:11:16) trapsize 7060
-\i (00:11:16) zoom out 1 
-\i (00:11:16) setwindow pcb
-\i (00:11:16) zoom out 10589.76 9472.51
-\i (00:11:16) trapsize 14120
-\i (00:11:16) zoom out 1 
-\i (00:11:16) setwindow pcb
-\i (00:11:16) zoom out 21207.64 6184.39
-\i (00:11:16) trapsize 14120
-\i (00:11:16) zoom in 1 
-\i (00:11:16) setwindow pcb
-\i (00:11:16) zoom in 21207.64 6184.39
-\i (00:11:16) trapsize 7060
-\i (00:11:16) zoom in 1 
-\i (00:11:16) setwindow pcb
-\i (00:11:16) zoom in 14279.07 6184.39
-\i (00:11:16) trapsize 3530
-\i (00:11:17) zoom out 1 
-\i (00:11:17) setwindow pcb
-\i (00:11:17) zoom out 14279.07 6184.40
-\i (00:11:17) trapsize 7060
-\i (00:11:20) drag_start grid 6146.17 10603.83
-\i (00:11:21) drag_stop 16679.40 3656.98
-\i (00:11:22) drag_start grid 16679.40 3656.98
-\i (00:11:23) drag_stop 8588.86 9799.01
-\i (00:11:27) QtSignal CWorkFlowWidget CWorkFlowWidget_tree selectionChanged Placement QuickPlace
-\i (00:11:27) QtSignal CWorkFlowWidget CWorkFlowWidget_tree clicked Placement QuickPlace
-\i (00:11:27) quickplace 
-\e (00:11:27) ERROR(SPMHTH-24): You need to add a board geometry outline
-\i (00:11:27) generaledit 
-\i (00:11:32) prepopup 6414.44 10462.64
-\i (00:11:33) pick grid 6160.29 10589.71
-\t (00:11:33) last pick:  6200.00 10600.00
-\i (00:11:36) add line 
-\i (00:11:37) pick grid 5722.58 10490.88
-\t (00:11:37) last pick:  5700.00 10500.00
-\i (00:11:38) pick grid 14363.78 10575.59
-\t (00:11:38) last pick:  14400.00 10600.00
-   (00:11:38) WARNING(SPMHA2-118): 'DESIGN_OUTLINE' and 'CUTOUT' are the preferred subclasses for defining an outline. Use these subclasses instead of the 'OUTLINE' subclass. [help]
-\i (00:11:41) fillin confirm
-\i (00:11:44) zoom out 1 
-\i (00:11:44) setwindow pcb
-\i (00:11:44) zoom out 14377.90 11112.14
-\i (00:11:44) trapsize 14120
-\i (00:11:44) zoom out 1 
-\i (00:11:44) setwindow pcb
-\i (00:11:44) zoom out 21405.31 16039.87
-\i (00:11:44) trapsize 14120
-\i (00:11:44) zoom out 1 
-\i (00:11:44) setwindow pcb
-\i (00:11:44) zoom out 21405.31 16039.87
-\i (00:11:44) trapsize 14120
-\i (00:11:47) pick grid 5676.08 15051.49
-\t (00:11:47) last pick:  5700.00 15100.00
-\i (00:11:48) pick grid 5760.80 10448.50
-\t (00:11:48) last pick:  5800.00 10400.00
-\t (00:11:48) last pick:  5700.00 10500.00
-\i (00:11:49) zoom in 1 
-\i (00:11:49) setwindow pcb
-\i (00:11:49) zoom in 4998.34 12284.05
-\i (00:11:49) trapsize 7060
-\i (00:11:49) zoom in 1 
-\i (00:11:49) setwindow pcb
-\i (00:11:49) zoom in 5083.06 12156.98
-\i (00:11:49) trapsize 3530
-\i (00:11:49) zoom in 1 
-\i (00:11:49) setwindow pcb
-\i (00:11:49) zoom in 5400.76 12065.21
-\i (00:11:49) trapsize 1765
-\i (00:11:50) zoom out 1 
-\i (00:11:50) setwindow pcb
-\i (00:11:50) zoom out 5538.42 11563.96
-\i (00:11:50) trapsize 3530
-\i (00:11:52) prepopup 5016.00 10928.58
-\i (00:11:53) done 
-\i (00:11:53) generaledit 
-\i (00:11:54) zoom out 1 
-\i (00:11:54) setwindow pcb
-\i (00:11:54) zoom out 9626.05 12100.51
-\i (00:11:54) trapsize 7060
-\i (00:11:54) zoom out 1 
-\i (00:11:54) setwindow pcb
-\i (00:11:54) zoom out 12368.78 12820.61
-\i (00:11:54) trapsize 14120
-\i (00:11:55) zoom in 1 
-\i (00:11:55) setwindow pcb
-\i (00:11:55) zoom in 10702.66 13950.17
-\i (00:11:55) trapsize 7060
-\i (00:11:55) zoom in 1 
-\i (00:11:55) setwindow pcb
-\i (00:11:55) zoom in 7007.48 13074.76
-\i (00:11:55) trapsize 3530
-\i (00:11:56) zoom out 1 
-\i (00:11:56) setwindow pcb
-\i (00:11:56) zoom out 11073.93 12509.98
-\i (00:11:56) trapsize 7060
-\i (00:12:03) QtSignal CWorkFlowWidget CWorkFlowWidget_tree selectionChanged Placement Manual
-\i (00:12:03) QtSignal CWorkFlowWidget CWorkFlowWidget_tree clicked Placement Manual
-\i (00:12:03) place manual 
-\i (00:12:03) setwindow form.plc_manual
-\i (00:12:03) FORM plc_manual tree  'Components by refdes' 
-\i (00:24:09) FORM plc_manual tree 'MULTISEL YES' 'Components by refdes' 
-\e (00:24:09) Cannot load symbol 'CONN3_770966-3'
-\i (00:24:13) FORM plc_manual advanced_settings  
-\i (00:24:14) FORM plc_manual placement_list  
-\i (00:24:18) FORM plc_manual place_page_num YES 
-\i (00:24:19) FORM plc_manual plc_by_alphanumeric YES 
-\i (00:24:20) FORM plc_manual place_by_property YES 
-\i (00:24:21) FORM plc_manual by_property VALUE 
-\i (00:24:23) FORM plc_manual by_value STM32H750VBT6 
-\i (00:24:25) FORM plc_manual plc_by_alphanumeric YES 
-\i (00:24:29) FORM plc_manual tree 'MULTISEL YES' 'Components by refdes' 
-\e (00:24:29) Cannot load symbol 'CONN3_770966-3'
-\i (00:24:31) FORM plc_manual done  
-\i (00:24:31) setwindow pcb
-\i (00:24:31) generaledit 
-\i (00:24:33) QtSignal CWorkFlowWidget CWorkFlowWidget_tree selectionChanged "Database Preparation" +
-\i (00:24:33) QtSignal "Board Outline" Create Automatically
-\i (00:24:33) QtSignal CWorkFlowWidget CWorkFlowWidget_tree clicked "Database Preparation" "Board Outline" +
-\i (00:24:33) QtSignal Create Automatically
-\i (00:24:33) board outline 
-\i (00:24:35) setwindow form.fpbdoutline
-\i (00:24:35) FORM fpbdoutline cancel  
-\i (00:24:35) setwindow pcb
-\i (00:24:35) generaledit 
-\i (00:24:37) QtSignal CWorkFlowWidget CWorkFlowWidget_tree selectionChanged Placement QuickPlace
-\i (00:24:37) QtSignal CWorkFlowWidget CWorkFlowWidget_tree clicked Placement QuickPlace
-\i (00:24:37) quickplace 
-\i (00:24:43) setwindow form.quickplc
-\i (00:24:43) FORM quickplc done  
-\i (00:24:43) setwindow pcb
-\i (00:24:43) generaledit 
-\i (00:25:41) QtSignal CWorkFlowWidget CWorkFlowWidget_tree selectionChanged Constraints Modes
-\i (00:25:41) QtSignal CWorkFlowWidget CWorkFlowWidget_tree clicked Constraints Modes
-\i (00:25:41) cns cmmodesv2 
-\i (00:25:48) QtSignal CWorkFlowWidget CWorkFlowWidget_tree dataChanged Constraints 0 | Modes
-\i (00:25:48) generaledit 
-\i (00:25:54) QtSignal CWorkFlowWidget CWorkFlowWidget_tree selectionChanged Placement
-\i (00:25:54) QtSignal CWorkFlowWidget CWorkFlowWidget_tree clicked Placement
-\i (00:25:55) QtSignal CWorkFlowWidget CWorkFlowWidget_tree selectionChanged Placement
-\i (00:25:55) QtSignal CWorkFlowWidget CWorkFlowWidget_tree clicked Placement
-\i (00:25:57) QtSignal CWorkFlowWidget CWorkFlowWidget_tree selectionChanged Placement DFA
-\i (00:25:57) QtSignal CWorkFlowWidget CWorkFlowWidget_tree clicked Placement DFA
-\i (00:25:57) dfa_spreadsheet 
-\i (00:25:59) QtSignal m_drcmodGrp m_drcOffButton toggled off
-\i (00:25:59) QtSignal m_drcmodGrp m_drcOnButton toggled on
-\i (00:26:01) QtSignal m_sprdSheetGrp m_spcValLineEdit editingFinished 25:25:25:25
-\i (00:26:01) QtSignal DFAMainDialog m_okBtn clicked
-\i (00:26:01) QtSignal MainCanvas DFAMainDialog closed
-\i (00:26:01) QtSignal CWorkFlowWidget CWorkFlowWidget_tree dataChanged Placement 2 | DFA
-\i (00:26:01) generaledit 
-\i (00:26:02) drag_start grid 6551.50 14472.61
-\i (00:26:02) drag_stop 9064.79 12326.43
-\i (00:26:05) QtSignal CWorkFlowWidget CWorkFlowWidget_tree selectionChanged Placement Manual
-\i (00:26:05) QtSignal CWorkFlowWidget CWorkFlowWidget_tree clicked Placement Manual
-\i (00:26:05) place manual 
-\i (00:26:05) setwindow form.plc_manual
-\i (00:26:05) FORM plc_manual tree  'Components by refdes' 
-\i (00:26:07) FORM plc_manual advanced_settings  
-\i (00:26:08) FORM plc_manual library YES 
-\i (00:31:04) FORM plc_manual placement_list  
-\i (00:31:05) FORM plc_manual tree 'MULTISEL YES' 'Components by refdes' 
-\e (00:31:05) Cannot load symbol 'CONN3_770966-3'
-\i (00:31:06) FORM plc_manual hide  
-\i (00:43:54) setwindow pcb
-\i (00:43:54) refdes J2 
-\i (00:43:54) xname_flush 
-\t (00:44:16) > DoPhysicalNetlistGenerate message received
-\t (00:44:16) > Generating physical netlist...
-\t (00:44:16) Starting genfeedformat...
-\t (00:44:22) > Sending response DonePhysicalNetlistGeneration
-\t (00:44:22) > Physical Netlist Generated
-\t (00:44:25) > DoPullSchematic message received
-\t (00:44:25) > Pulling schematic...
-\t (00:44:25) Starting Cadence Logic Import...
-\w (00:44:35) WARNING(SPMHGE-269): netrev had warnings, use Viewlog to review the log file.
-\i (00:44:35) setwindow form.plc_manual
-\i (00:44:35) FORM plc_manual cancel  
-\t (00:44:35) Opening existing design...
-\i (00:44:36) setwindow pcb
-\i (00:44:36) trapsize 7060
-\t (00:44:36) > Sending response DonePullSchematic
-\t (00:44:36) > Schematic pulled successfully
-\i (00:44:36) generaledit 
-\i (00:44:50) setwindow text
-\i (00:44:50) close
-\i (00:45:39) QtSignal CWorkFlowWidget CWorkFlowWidget_tree selectionChanged Placement Manual
-\i (00:45:39) QtSignal CWorkFlowWidget CWorkFlowWidget_tree clicked Placement Manual
-\i (00:45:39) place manual 
-\i (00:45:40) setwindow form.plc_manual
-\i (00:45:40) FORM plc_manual tree  'Components by refdes' 
-\i (00:45:41) FORM plc_manual tree  J2 'Components by refdes' 
-\i (00:45:41) FORM plc_manual tree 'MULTISEL YES' J2 'Components by refdes' 
-\e (00:45:41) Cannot load symbol 'CONN3_770966'
-\i (00:45:42) FORM plc_manual propbtn YES 
-\i (00:45:44) FORM plc_manual prevbtn YES 
-\i (00:45:45) FORM plc_manual tree  J5 'Components by refdes' 
-\i (00:45:46) FORM plc_manual tree  J2 'Components by refdes' 
-\i (00:45:46) FORM plc_manual tree  J5 'Components by refdes' 
-\i (00:45:46) FORM plc_manual tree 'MULTISEL YES' J5 'Components by refdes' 
-\i (00:45:47) FORM plc_manual tree  J6 'Components by refdes' 
-\i (00:45:47) FORM plc_manual tree 'MULTISEL YES' J6 'Components by refdes' 
-\i (00:45:47) FORM plc_manual tree  J7 'Components by refdes' 
-\i (00:45:47) FORM plc_manual tree 'MULTISEL YES' J7 'Components by refdes' 
-\i (00:45:48) FORM plc_manual tree  'Components by refdes' 
-\i (00:45:48) FORM plc_manual tree 'MULTISEL YES' 'Components by refdes' 
-\i (00:45:49) FORM plc_manual tree  U2 'Components by refdes' 
-\i (00:45:49) FORM plc_manual tree  U1 'Components by refdes' 
-\i (00:45:50) FORM plc_manual tree  R1 'Components by refdes' 
-\i (00:45:50) FORM plc_manual tree  J7 'Components by refdes' 
-\i (00:45:50) FORM plc_manual tree  J6 'Components by refdes' 
-\i (00:45:51) FORM plc_manual tree  J5 'Components by refdes' 
-\i (00:45:51) FORM plc_manual tree  J2 'Components by refdes' 
-\i (00:45:56) FORM plc_manual cancel  
-\i (00:45:56) setwindow pcb
-\i (00:45:56) generaledit 
-\i (00:47:20) xrefdes J6 
-\t (00:47:20) Can not select unplaced component J6.
-\t (00:47:20) Can not select unplaced component J6.
-\i (00:47:20) xname_flush 
-\i (00:48:21) xrefdes J6 
-\t (00:48:21) Can not select unplaced component J6.
-\t (00:48:21) Can not select unplaced component J6.
-\i (00:48:21) xname_flush '!' 
-\i (00:48:24) xname_flush 
-\i (00:48:29) xname_flush '!' 
-\i (00:48:29) xname_flush 
-\i (00:48:30) xname_flush '!' 
-\i (00:48:30) xname_flush 
-\i (00:48:33) xname_flush '!' 
-\i (00:48:33) xname_flush 
-\i (00:48:34) xname_flush '!' 
-\i (00:48:34) xname_flush 
-\i (00:48:41) xname_flush '!' 
-\i (00:48:41) xname_flush 
-\i (00:48:43) xname_flush '!' 
-\i (00:48:43) xrefdes J2 
-\t (00:48:43) Can not select unplaced component J2.
-\t (00:48:43) Can not select unplaced component J2.
-\i (00:48:43) xname_flush 
-\i (00:48:49) xname_flush 
-\i (00:48:49) xname_flush '!' 
-\i (00:48:49) xname_flush 
-\i (00:48:53) xname_flush '!' 
-\i (00:48:53) xname_flush 
-\i (00:48:57) xname_flush '!' 
-\i (00:48:59) xNet Vcc 
-\i (00:48:59) xname_flush '!' 
-\i (00:49:00) xNet Vcc 
-\i (00:49:00) xname_flush 
-\i (00:49:06) xNet Vcc 
-\i (00:49:06) xname_flush '!' 
-\i (00:49:15) xrefdes J5 
-\t (00:49:15) Can not select unplaced component J5.
-\t (00:49:15) Can not select unplaced component J5.
-\i (00:49:15) xname_flush 
-\i (00:49:16) xname_flush 
-\i (00:49:18) xname_flush '!' 
-\i (00:49:18) xname_flush 
-\i (00:49:21) xname_flush 
-\i (00:49:22) xname_flush '!' 
-\i (00:49:23) xname_flush 
-\i (00:49:25) xname_flush '!' 
-\i (00:49:25) xname_flush 
-\i (00:49:28) xname_flush '!' 
-\i (00:49:28) xname_flush 
-\i (00:49:28) xname_flush '!' 
-\i (00:49:31) xNet N03840 
-\i (00:49:31) xname_flush 
-\i (00:49:32) xNet N03840 
-\i (00:49:32) xname_flush '!' 
-\i (00:49:32) xNet N03840 
-\i (00:49:32) xname_flush 
-\i (00:49:35) xNet N03840 
-\i (00:49:35) xname_flush 
-\i (00:49:36) xNet N03840 
-\i (00:49:36) xname_flush 
-\i (00:49:37) xNet N03840 
-\i (00:49:37) xname_flush '!' 
-\i (00:49:37) xNet N03840 
-\i (00:49:37) xname_flush 
-\i (00:49:37) xNet N03840 
-\i (00:49:37) xname_flush 
-\i (00:49:44) xNet Gnd 
-\i (00:49:44) xname_flush '!' 
-\i (00:49:48) xNet Vcc 
-\i (00:49:48) xname_flush '!' 
-\i (00:49:49) xNet Vcc 
-\i (00:49:49) xname_flush '!' 
-\i (00:49:51) xNet Vcc 
-\i (00:49:51) xname_flush '!' 
-\i (00:49:56) xrefdes J7 
-\t (00:49:56) Can not select unplaced component J7.
-\t (00:49:56) Can not select unplaced component J7.
-\i (00:49:56) xname_flush 
-\i (00:49:57) xname_flush 
-\i (00:49:59) xname_flush '!' 
-\i (00:49:59) xname_flush 
-\i (00:50:01) xname_flush '!' 
-\i (00:50:05) xname_flush 
-\i (00:50:06) xname_flush '!' 
-\i (00:50:06) xname_flush 
-\i (00:50:06) xname_flush '!' 
-\i (00:50:09) xname_flush 
-\i (00:50:10) xname_flush '!' 
-\i (00:50:10) xname_flush 
-\i (00:50:13) xname_flush '!' 
-\i (00:50:13) xname_flush 
-\i (00:50:21) xname_flush '!' 
-\i (00:50:21) xname_flush 
-\i (00:50:22) xname_flush '!' 
-\i (00:50:22) xname_flush 
-\i (00:50:23) xname_flush '!' 
-\i (00:50:29) xNet N04558 
-\i (00:50:29) xname_flush 
-\i (00:50:30) xNet N04558 
-\i (00:50:30) xname_flush '!' 
-\i (00:50:30) xNet Vcc 
-\i (00:50:30) xname_flush '!' 
-\i (00:50:34) xNet Vcc 
-\i (00:50:34) xname_flush '!' 
-\i (00:50:38) xNet Vcc 
-\i (00:50:38) xname_flush '!' 
-\i (00:50:48) xname_flush 
-\i (00:50:49) xname_flush '!' 
-\i (00:50:52) xNet Vcc 
-\i (00:50:52) xname_flush '!' 
-\t (00:51:03) > DoPhysicalNetlistGenerate message received
-\t (00:51:03) > Generating physical netlist...
-\t (00:51:03) Starting genfeedformat...
-\t (00:51:09) > Sending response DonePhysicalNetlistGeneration
-\t (00:51:09) > Physical Netlist Generated
-\t (00:51:15) > DoPullSchematic message received
-\t (00:51:15) > Pulling schematic...
-\t (00:51:15) Starting Cadence Logic Import...
-\w (00:51:24) WARNING(SPMHGE-269): netrev had warnings, use Viewlog to review the log file.
-\t (00:51:24) Opening existing design...
-\i (00:51:25) trapsize 7060
-\t (00:51:25) > Sending response DonePullSchematic
-\t (00:51:25) > Schematic pulled successfully
+\t (00:00:21) allegro 17.4 P001 Windows SPB 64-bit Edition
+\t (00:00:21)     Journal start - Thu Apr 13 10:57:30 2023
+\t (00:00:21)         Host=DESKTOP-9KIRPLL User=User Pid=13024 CPUs=4
+\t (00:00:21) CmdLine= allegro.exe -proj d:/.workshop/diploma/optirex/board/board.opj d:/.workshop/diploma/optirex/board/allegro/board.brd
+\t (00:00:21) 
+   (00:00:21) Loading axlcore.cxt 
+\t (00:00:26) Opening existing design...
+\i (00:00:26) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged board
+\d (00:00:26) Design opened: d:/.workshop/diploma/optirex/board/allegro/board.brd
+\i (00:00:28) trapsize 14056
+\i (00:00:28) trapsize 14747
+\i (00:00:28) trapsize 15065
+\i (00:00:28) trapsize 14056
+\i (00:00:28) trapsize 22788
+\t (00:00:28) > Sending response DoneOpenBoard
+\i (00:00:29) trapsize 14120
+\t (00:00:31) > DoPullSchematic message received
+\t (00:00:31) > Pulling schematic...
+\t (00:00:31) Starting Cadence Logic Import...
+\w (00:00:49) WARNING(SPMHGE-269): netrev had warnings, use Viewlog to review the log file.
+\t (00:00:49) Opening existing design...
+\i (00:00:49) trapsize 14120
+\t (00:00:50) > Sending response DonePullSchematic
+\t (00:00:50) > Schematic pulled successfully
+\i (00:00:58) generaledit 
+\i (00:01:11) setwindow text
+\i (00:01:11) close
+\i (00:01:14) zoom out 1 
+\i (00:01:14) setwindow pcb
+\i (00:01:14) zoom out 17056.48 11691.03
+\i (00:01:14) trapsize 14120
+\i (00:01:14) zoom out 1 
+\i (00:01:14) setwindow pcb
+\i (00:01:14) zoom out 17056.48 11691.03
+\i (00:01:14) trapsize 14120
+\i (00:01:14) zoom out 1 
+\i (00:01:14) setwindow pcb
+\i (00:01:14) zoom out 17056.48 11691.03
+\i (00:01:14) trapsize 14120
+\i (00:01:14) zoom out 1 
+\i (00:01:14) setwindow pcb
+\i (00:01:14) zoom out 17056.48 11691.03
+\i (00:01:14) trapsize 14120
+\i (00:01:14) zoom in 1 
+\i (00:01:14) setwindow pcb
+\i (00:01:14) zoom in 17056.48 11691.03
+\i (00:01:14) trapsize 7060
+\i (00:01:14) zoom in 1 
+\i (00:01:15) setwindow pcb
+\i (00:01:15) zoom in 12203.49 11691.03
+\i (00:01:15) trapsize 3530
+\i (00:01:16) zoom in 1 
+\i (00:01:16) setwindow pcb
+\i (00:01:16) zoom in 13071.85 10130.82
+\i (00:01:16) trapsize 1765
+\i (00:01:16) zoom out 1 
+\i (00:01:16) setwindow pcb
+\i (00:01:16) zoom out 13071.85 10130.82
+\i (00:01:16) trapsize 3530
+\i (00:01:16) zoom out 1 
+\i (00:01:16) setwindow pcb
+\i (00:01:16) zoom out 13071.85 10130.82
+\i (00:01:16) trapsize 7060
+\i (00:01:17) zoom in 1 
+\i (00:01:17) setwindow pcb
+\i (00:01:17) zoom in 13071.85 10130.82
+\i (00:01:17) trapsize 3530
+\i (00:01:17) zoom in 1 
+\i (00:01:17) setwindow pcb
+\i (00:01:17) zoom in 13071.85 10130.82
+\i (00:01:17) trapsize 1765
+\i (00:01:17) zoom in 1 
+\i (00:01:17) setwindow pcb
+\i (00:01:17) zoom in 13071.85 10130.82
+\i (00:01:17) trapsize 882
+\i (00:01:17) zoom out 1 
+\i (00:01:17) setwindow pcb
+\i (00:01:17) zoom out 12858.29 10326.73
+\i (00:01:17) trapsize 1765
+\i (00:01:17) zoom out 1 
+\i (00:01:17) setwindow pcb
+\i (00:01:17) zoom out 12854.76 10323.21
+\i (00:01:17) trapsize 3530
+\i (00:01:18) zoom in 1 
+\i (00:01:18) setwindow pcb
+\i (00:01:18) zoom in 12854.76 10323.21
+\i (00:01:18) trapsize 1765
+\i (00:01:18) zoom in 1 
+\i (00:01:18) setwindow pcb
+\i (00:01:18) zoom in 12854.76 10323.21
+\i (00:01:18) trapsize 882
+\i (00:01:18) zoom out 1 
+\i (00:01:18) setwindow pcb
+\i (00:01:18) zoom out 12854.76 10323.21
+\i (00:01:18) trapsize 1765
+\i (00:01:18) zoom out 1 
+\i (00:01:18) setwindow pcb
+\i (00:01:18) zoom out 12854.77 10323.21
+\i (00:01:18) trapsize 3530
+\i (00:01:18) zoom out 1 
+\i (00:01:18) setwindow pcb
+\i (00:01:18) zoom out 12854.77 10323.21
+\i (00:01:18) trapsize 7060
+\i (00:01:18) zoom out 1 
+\i (00:01:18) setwindow pcb
+\i (00:01:18) zoom out 12217.60 10323.21
+\i (00:01:18) trapsize 14120
+\i (00:01:20) QtSignal CWorkFlowWidget CWorkFlowWidget_tree selectionChanged Setup
+\i (00:01:20) QtSignal CWorkFlowWidget CWorkFlowWidget_tree clicked Setup
+\i (00:01:21) QtSignal CWorkFlowWidget CWorkFlowWidget_tree selectionChanged "Database Preparation"
+\i (00:01:21) QtSignal CWorkFlowWidget CWorkFlowWidget_tree clicked "Database Preparation"
+\i (00:01:23) QtSignal CWorkFlowWidget CWorkFlowWidget_tree selectionChanged "Database Preparation" +
+\i (00:01:23) QtSignal "Board Outline"
+\i (00:01:23) QtSignal CWorkFlowWidget CWorkFlowWidget_tree clicked "Database Preparation" "Board Outline"
+\i (00:01:24) QtSignal CWorkFlowWidget CWorkFlowWidget_tree selectionChanged "Database Preparation" +
+\i (00:01:24) QtSignal "Board Outline" Import
+\i (00:01:24) QtSignal CWorkFlowWidget CWorkFlowWidget_tree clicked "Database Preparation" "Board Outline" +
+\i (00:01:24) QtSignal Import
+\i (00:01:26) QtSignal CWorkFlowWidget CWorkFlowWidget_tree selectionChanged "Database Preparation" +
+\i (00:01:26) QtSignal "Board Outline" Import
+\i (00:01:26) QtSignal CWorkFlowWidget CWorkFlowWidget_tree clicked "Database Preparation" "Board Outline" +
+\i (00:01:26) QtSignal Import
+\i (00:01:26) QtSignal CWorkFlowWidget CWorkFlowWidget_tree selectionChanged "Database Preparation" +
+\i (00:01:26) QtSignal "Board Outline" Create
+\i (00:01:26) QtSignal CWorkFlowWidget CWorkFlowWidget_tree clicked "Database Preparation" "Board Outline" +
+\i (00:01:26) QtSignal Create
+\i (00:01:27) QtSignal CWorkFlowWidget CWorkFlowWidget_tree selectionChanged "Database Preparation" +
+\i (00:01:27) QtSignal "Board Outline" Create Automatically
+\i (00:01:27) QtSignal CWorkFlowWidget CWorkFlowWidget_tree clicked "Database Preparation" "Board Outline" +
+\i (00:01:27) QtSignal Create Automatically
+\i (00:01:27) board outline 
+   (00:01:27) Loading floor.cxt 
+   (00:01:27) Loading fputil.cxt 
+\i (00:01:30) setwindow form.fpbdoutline
+\i (00:01:30) FORM fpbdoutline done  
+\i (00:01:30) setwindow pcb
+\i (00:01:30) generaledit 
+\i (00:01:32) pick grid 5958.47 14882.06
+\t (00:01:32) last pick:  6000.00 14900.00
+\i (00:01:35) QtSignal CWorkFlowWidget CWorkFlowWidget_tree selectionChanged "Database Preparation" +
+\i (00:01:35) QtSignal "Board Outline" Create Manual
+\i (00:01:35) QtSignal CWorkFlowWidget CWorkFlowWidget_tree clicked "Database Preparation" "Board Outline" +
+\i (00:01:35) QtSignal Create Manual
+\i (00:01:35) FORM mini class BOARD GEOMETRY 
+\i (00:01:35) FORM mini subclass DESIGN_OUTLINE 
+\i (00:01:35) shape add 
+\i (00:01:35) trapsize 14120
+\i (00:01:37) pick grid 4857.14 15305.65
+\t (00:01:37) last pick:  4900.00 15300.00
+\i (00:01:40) pick grid 4857.14 7144.52
+\t (00:01:40) last pick:  4900.00 7100.00
+\t (00:01:49) last pick:  22591.36 11069.77
+\w (00:01:49) WARNING(SPMHUT-40): Pick is outside the extent of the drawing ... pick again.
+\t (00:01:51) last pick:  21687.71 8612.96
+\w (00:01:51) WARNING(SPMHUT-40): Pick is outside the extent of the drawing ... pick again.
+\t (00:01:53) last pick:  21122.92 14176.08
+\w (00:01:53) WARNING(SPMHUT-40): Pick is outside the extent of the drawing ... pick again.
+\t (00:01:54) last pick:  21151.16 15475.08
+\w (00:01:54) WARNING(SPMHUT-40): Pick is outside the extent of the drawing ... pick again.
+\i (00:01:56) pick grid 5986.71 7426.91
+\t (00:01:56) last pick:  6000.00 7400.00
+\i (00:02:02) undo 
+\i (00:02:02) trapsize 14120
+\i (00:02:02) generaledit 
+\i (00:02:07) shape add rect 
+\i (00:02:08) pick grid 3727.57 15475.08
+\t (00:02:08) last pick:  3700.00 15500.00
+\i (00:02:09) pick grid 19061.46 4038.21
+\t (00:02:09) last pick:  19100.00 4000.00
+\t (00:02:13) last pick:  22760.80 8980.07
+\w (00:02:13) WARNING(SPMHUT-40): Pick is outside the extent of the drawing ... pick again.
+\i (00:02:14) save 
+\i (00:02:17) fillin yes 
+\t (00:02:17) > Sending response DoneOpenBoard
+\i (00:02:17) generaledit 
+\i (00:02:19) QtSignal CWorkFlowWidget CWorkFlowWidget_tree selectionChanged Placement
+\i (00:02:19) QtSignal CWorkFlowWidget CWorkFlowWidget_tree clicked Placement
+\i (00:02:20) QtSignal CWorkFlowWidget CWorkFlowWidget_tree selectionChanged Placement Manual
+\i (00:02:20) QtSignal CWorkFlowWidget CWorkFlowWidget_tree clicked Placement Manual
+\i (00:02:20) place manual 
+\i (00:02:20) setwindow form.plc_manual
+\i (00:02:20) FORM plc_manual tree  'Components by refdes' 
+\i (00:02:21) FORM plc_manual tree  J6 'Components by refdes' 
+\i (00:02:21) FORM plc_manual tree 'MULTISEL YES' J6 'Components by refdes' 
+\w (00:02:21) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\t (00:02:21) Placing J6 / CON2_CONN2_770966-2_CON2 / CONN2_770966-2 on Top.
+\i (00:02:23) FORM plc_manual tree  J8 'Components by refdes' 
+\i (00:02:23) FORM plc_manual tree 'MULTISEL YES' J8 'Components by refdes' 
+\i (00:02:23) FORM plc_manual tree  J9 'Components by refdes' 
+\i (00:02:23) FORM plc_manual tree 'MULTISEL YES' J9 'Components by refdes' 
+\i (00:02:24) FORM plc_manual tree  J10 'Components by refdes' 
+\i (00:02:24) FORM plc_manual tree 'MULTISEL YES' J10 'Components by refdes' 
+\i (00:02:24) FORM plc_manual tree  J11 'Components by refdes' 
+\i (00:02:24) FORM plc_manual tree 'MULTISEL YES' J11 'Components by refdes' 
+\i (00:02:24) FORM plc_manual tree  J12 'Components by refdes' 
+\i (00:02:25) FORM plc_manual tree 'MULTISEL YES' J12 'Components by refdes' 
+\i (00:02:25) FORM plc_manual tree  J13 'Components by refdes' 
+\i (00:02:25) FORM plc_manual tree 'MULTISEL YES' J13 'Components by refdes' 
+\i (00:02:25) FORM plc_manual tree  R1 'Components by refdes' 
+\i (00:02:25) FORM plc_manual tree 'MULTISEL YES' R1 'Components by refdes' 
+\i (00:02:25) FORM plc_manual tree  U1 'Components by refdes' 
+\i (00:02:26) FORM plc_manual tree 'MULTISEL YES' U1 'Components by refdes' 
+\i (00:02:26) FORM plc_manual tree  U2 'Components by refdes' 
+\i (00:02:26) FORM plc_manual tree 'MULTISEL YES' U2 'Components by refdes' 
+\i (00:02:27) setwindow pcb
+\i (00:02:27) pick grid 18129.57 14966.78
+\t (00:02:27) last pick:  18100.00 15000.00
+\t (00:02:27) Placing J8 / CON2_CONN2_770966-2_CON2 / CONN2_770966-2 on Top.
+\i (00:02:28) pick grid 17875.41 13611.30
+\t (00:02:28) last pick:  17900.00 13600.00
+\t (00:02:28) Placing J9 / CON2_CONN2_770966-2_CON2 / CONN2_770966-2 on Top.
+\i (00:02:29) pick grid 16378.74 12340.53
+\t (00:02:29) last pick:  16400.00 12300.00
+\t (00:02:29) Placing J10 / CON2_CONN2_770966-2_CON2 / CONN2_770966-2 on Top.
+\i (00:02:29) pick grid 18044.85 10279.07
+\t (00:02:29) last pick:  18000.00 10300.00
+\t (00:02:29) Placing J11 / CON2_CONN2_770966-2_CON2 / CONN2_770966-2 on Top.
+\i (00:02:30) pick grid 16237.54 9431.89
+\t (00:02:30) last pick:  16200.00 9400.00
+\t (00:02:30) Placing J12 / CON2_CONN2_770966-2_CON2 / CONN2_770966-2 on Top.
+\i (00:02:30) pick grid 16971.76 7991.69
+\t (00:02:30) last pick:  17000.00 8000.00
+\t (00:02:30) Placing J13 / CON2_CONN2_770966-2_CON2 / CONN2_770966-2 on Top.
+\i (00:02:31) pick grid 15616.28 6692.69
+\t (00:02:31) last pick:  15600.00 6700.00
+\t (00:02:31) Placing R1 / R_AXRC05_10K / AXRC05 on Top.
+\i (00:02:32) pick grid 13328.90 7850.50
+\t (00:02:32) last pick:  13300.00 7900.00
+\e (00:02:32) Cannot load symbol 'QFN50P700X700X60-49N'
+\i (00:02:34) setwindow form.plc_manual
+\i (00:02:34) FORM plc_manual tree  U1 'Components by refdes' 
+\i (00:02:34) FORM plc_manual tree  U2 'Components by refdes' 
+\i (00:02:35) FORM plc_manual tree  U1 'Components by refdes' 
+\i (00:02:35) FORM plc_manual tree  U2 'Components by refdes' 
+\i (00:02:38) FORM plc_manual done  
+\i (00:02:39) setwindow pcb
+\i (00:02:39) generaledit 
+\i (00:02:40) zoom in 1 
+\i (00:02:40) setwindow pcb
+\i (00:02:40) zoom in 13893.69 8782.39
+\i (00:02:40) trapsize 7060
+\i (00:02:40) zoom in 1 
+\i (00:02:40) setwindow pcb
+\i (00:02:40) zoom in 10720.93 8725.92
+\i (00:02:40) trapsize 3530
+\i (00:02:40) zoom in 1 
+\i (00:02:40) setwindow pcb
+\i (00:02:40) zoom in 10798.59 8676.50
+\i (00:02:40) trapsize 1765
+\i (00:02:40) zoom in 1 
+\i (00:02:40) setwindow pcb
+\i (00:02:40) zoom in 10833.89 8634.14
+\i (00:02:40) trapsize 882
+\i (00:02:40) zoom out 1 
+\i (00:02:40) setwindow pcb
+\i (00:02:40) zoom out 11520.46 8657.09
+\i (00:02:40) trapsize 1765
+\i (00:02:40) zoom out 1 
+\i (00:02:40) setwindow pcb
+\i (00:02:40) zoom out 11523.99 8657.09
+\i (00:02:40) trapsize 3530
+\i (00:02:41) zoom out 1 
+\i (00:02:41) setwindow pcb
+\i (00:02:41) zoom out 11559.29 8635.91
+\i (00:02:41) trapsize 7060
+\i (00:02:41) zoom out 1 
+\i (00:02:41) setwindow pcb
+\i (00:02:41) zoom out 13484.23 8706.51
+\i (00:02:41) trapsize 14120
+\i (00:02:48) xrefdes U2 
+\t (00:02:48) Can not select unplaced component U2.
+\t (00:02:48) Can not select unplaced component U2.
+\i (00:02:48) xname_flush 
+\i (00:02:51) xrefdes U2 
+\t (00:02:51) Can not select unplaced component U2.
+\t (00:02:51) Can not select unplaced component U2.
+\i (00:02:51) xname_flush 
+\i (00:02:52) xrefdes U2 
+\t (00:02:52) Can not select unplaced component U2.
+\t (00:02:52) Can not select unplaced component U2.
+\i (00:02:52) xname_flush 
+\i (00:02:52) xrefdes U2 
+\t (00:02:52) Can not select unplaced component U2.
+\t (00:02:52) Can not select unplaced component U2.
+\i (00:02:52) xname_flush 
+\i (00:02:53) xrefdes U2 
+\t (00:02:53) Can not select unplaced component U2.
+\t (00:02:53) Can not select unplaced component U2.
+\i (00:02:53) xname_flush 
+\i (00:03:37) xrefdes U2 
+\t (00:03:37) Can not select unplaced component U2.
+\t (00:03:37) Can not select unplaced component U2.
+\i (00:03:37) xrefdes U2 
+\t (00:03:37) Can not select unplaced component U2.
+\t (00:03:37) Can not select unplaced component U2.
+\i (00:03:37) xrefdes U2 
+\t (00:03:37) Can not select unplaced component U2.
+\t (00:03:37) Can not select unplaced component U2.
+\i (00:03:37) xrefdes U2 
+\t (00:03:37) Can not select unplaced component U2.
+\t (00:03:37) Can not select unplaced component U2.
+\i (00:03:37) xrefdes U2 
+\t (00:03:37) Can not select unplaced component U2.
+\t (00:03:37) Can not select unplaced component U2.
+\i (00:03:37) xname_flush '!' 
+\i (00:03:37) xrefdes U1 
+\t (00:03:37) Can not select unplaced component U1.
+\t (00:03:37) Can not select unplaced component U1.
+\i (00:03:37) xname_flush 
+\i (00:04:21) xrefdes U1 
+\t (00:04:21) Can not select unplaced component U1.
+\t (00:04:21) Can not select unplaced component U1.
+\i (00:04:21) xname_flush '!' 
+\i (00:04:38) zoom in 1 
+\i (00:04:38) setwindow pcb
+\i (00:04:38) zoom in 17169.43 11719.27
+\i (00:04:38) trapsize 7060
+\i (00:04:38) zoom in 1 
+\i (00:04:38) setwindow pcb
+\i (00:04:38) zoom in 12189.37 11281.57
+\i (00:04:38) trapsize 3530
+\i (00:04:38) zoom out 1 
+\i (00:04:38) setwindow pcb
+\i (00:04:38) zoom out 15055.65 10829.75
+\i (00:04:38) trapsize 7060
+\i (00:04:39) zoom out 1 
+\i (00:04:39) setwindow pcb
+\i (00:04:39) zoom out 15055.66 10829.74
+\i (00:04:39) trapsize 14120
+\i (00:04:40) zoom in 1 
+\i (00:04:40) setwindow pcb
+\i (00:04:40) zoom in 19795.68 7257.47
+\i (00:04:40) trapsize 7060
+\i (00:04:40) zoom in 1 
+\i (00:04:40) setwindow pcb
+\i (00:04:40) zoom in 13813.12 7285.72
+\i (00:04:40) trapsize 3530
+\i (00:04:41) zoom in 1 
+\i (00:04:41) setwindow pcb
+\i (00:04:41) zoom in 16262.88 6353.83
+\i (00:04:41) trapsize 1765
+\i (00:04:41) zoom in 1 
+\i (00:04:41) setwindow pcb
+\i (00:04:41) zoom in 16269.95 6276.17
+\i (00:04:41) trapsize 882
+\i (00:04:42) zoom out 1 
+\i (00:04:42) setwindow pcb
+\i (00:04:42) zoom out 16268.18 6276.17
+\i (00:04:42) trapsize 1765
+\i (00:04:43) zoom out 1 
+\i (00:04:43) setwindow pcb
+\i (00:04:43) zoom out 16412.92 7264.54
+\i (00:04:43) trapsize 3530
+\i (00:04:43) zoom out 1 
+\i (00:04:43) setwindow pcb
+\i (00:04:43) zoom out 16462.34 7589.30
+\i (00:04:43) trapsize 7060
+\i (00:04:46) zoom out 1 
+\i (00:04:46) setwindow pcb
+\i (00:04:46) zoom out 12014.67 8958.89
+\i (00:04:46) trapsize 14120
+\i (00:04:46) zoom out 1 
+\i (00:04:46) setwindow pcb
+\i (00:04:46) zoom out 26234.22 15559.80
+\i (00:04:46) trapsize 14120
+\t (00:05:25) > Response received OpenDesign is done by remote tool
+\t (00:05:25) Design d:\.workshop\diploma\optirex\board\board.opj has been opened
+\t (00:07:50) > DoPhysicalNetlistGenerate message received
+\t (00:07:50) > Generating physical netlist...
+\t (00:07:50) Starting genfeedformat...
+\t (00:07:55) > Sending response DonePhysicalNetlistGeneration
+\t (00:07:55) > Physical Netlist Generated
+\t (00:07:59) > DoPullSchematic message received
+\t (00:07:59) > Pulling schematic...
+\t (00:07:59) Starting Cadence Logic Import...
+\w (00:08:06) WARNING(SPMHGE-269): netrev had warnings, use Viewlog to review the log file.
+\t (00:08:06) Opening existing design...
+\i (00:08:06) trapsize 14120
+\t (00:08:06) > Sending response DonePullSchematic
+\t (00:08:06) > Schematic pulled successfully
+\i (00:08:37) setwindow text
+\i (00:08:37) close
+\i (00:08:40) QtSignal CWorkFlowWidget CWorkFlowWidget_tree selectionChanged Placement Manual
+\i (00:08:40) QtSignal CWorkFlowWidget CWorkFlowWidget_tree clicked Placement Manual
+\i (00:08:40) place manual 
+\i (00:08:40) setwindow form.plc_manual
+\i (00:08:40) FORM plc_manual tree  'Components by refdes' 
+\i (00:08:41) FORM plc_manual tree  U2 'Components by refdes' 
+\i (00:08:41) FORM plc_manual tree  U1 'Components by refdes' 
+\i (00:08:42) FORM plc_manual tree  U2 'Components by refdes' 
+\i (00:08:43) FORM plc_manual tree  U1 'Components by refdes' 
+\i (00:08:43) FORM plc_manual tree  U2 'Components by refdes' 
+\i (00:08:44) FORM plc_manual tree  U1 'Components by refdes' 
+\i (00:08:44) FORM plc_manual tree  U2 'Components by refdes' 
+\i (00:08:45) FORM plc_manual tree  U1 'Components by refdes' 
+\i (00:08:46) FORM plc_manual tree 'MULTISEL YES' U1 'Components by refdes' 
+\e (00:08:46) Cannot load symbol 'QFN50P700X700X60-49N'
+\i (00:08:46) FORM plc_manual tree  U2 'Components by refdes' 
+\i (00:08:46) FORM plc_manual tree 'MULTISEL YES' U2 'Components by refdes' 
+\i (00:08:50) FORM plc_manual done  
+\i (00:08:50) setwindow pcb
+\i (00:08:50) generaledit 
+\t (00:13:17) > DoPhysicalNetlistGenerate message received
+\t (00:13:17) > Generating physical netlist...
+\t (00:13:17) Starting genfeedformat...
+\t (00:13:22) > Sending response DonePhysicalNetlistGeneration
+\t (00:13:22) > Physical Netlist Generated
+\i (00:14:29) QtSignal CWorkFlowWidget CWorkFlowWidget_tree selectionChanged Placement Manual
+\i (00:14:29) QtSignal CWorkFlowWidget CWorkFlowWidget_tree clicked Placement Manual
+\i (00:14:29) place manual 
+\i (00:14:29) setwindow form.plc_manual
+\i (00:14:29) FORM plc_manual tree  'Components by refdes' 
+\i (00:14:30) FORM plc_manual tree  U1 'Components by refdes' 
+\i (00:14:31) FORM plc_manual tree 'MULTISEL YES' U1 'Components by refdes' 
+\e (00:14:31) Cannot load symbol 'QFN50P700X700X60-49N'
+\i (00:14:31) FORM plc_manual tree  U2 'Components by refdes' 
+\i (00:14:31) FORM plc_manual tree 'MULTISEL YES' U2 'Components by refdes' 
+\i (00:14:32) FORM plc_manual tree  U1 'Components by refdes' 
+\i (00:14:32) FORM plc_manual tree 'MULTISEL NO' U1 'Components by refdes' 
+\e (00:14:32) Cannot load symbol 'QFP50P1600X1600X160-100N'
+\i (00:14:33) FORM plc_manual tree  U2 'Components by refdes' 
+\i (00:14:33) FORM plc_manual tree 'MULTISEL NO' U2 'Components by refdes' 
+\i (00:14:34) FORM plc_manual tree 'MULTISEL YES' U2 'Components by refdes' 
+\e (00:14:34) Cannot load symbol 'QFP50P1600X1600X160-100N'
+\i (00:14:34) FORM plc_manual tree  U1 'Components by refdes' 
+\i (00:14:34) FORM plc_manual tree 'MULTISEL YES' U1 'Components by refdes' 
+\e (00:14:34) Cannot load symbol 'QFN50P700X700X60-49N'
+\i (00:14:36) FORM plc_manual tree  U2 'Components by refdes' 
+\i (00:14:36) FORM plc_manual tree 'MULTISEL NO' U2 'Components by refdes' 
+\i (00:14:37) FORM plc_manual tree  U1 'Components by refdes' 
+\i (00:14:37) FORM plc_manual tree 'MULTISEL NO' U1 'Components by refdes' 
+\i (00:14:39) FORM plc_manual cancel  
+\i (00:14:39) setwindow pcb
+\i (00:14:39) generaledit 
+\t (00:15:42) > Response received OpenDesign is done by remote tool
+\t (00:15:42) Design d:\.workshop\diploma\optirex\board\board.opj has been opened
+\i (00:16:29) xrefdes U1 
+\t (00:16:29) Can not select unplaced component U1.
+\t (00:16:29) Can not select unplaced component U1.
+\i (00:16:29) xname_flush 
+\i (00:17:08) xname_flush 
+\i (00:17:28) xname_flush '!' 
+\i (00:17:45) xname_flush 
+\i (00:17:47) xname_flush '!' 
+\i (00:17:56) xname_flush 
+\i (00:18:17) xname_flush '!' 
+\i (00:18:26) xrefdes U2 
+\t (00:18:26) Can not select unplaced component U2.
+\t (00:18:26) Can not select unplaced component U2.
+\i (00:18:26) xname_flush 
+\i (00:18:34) xname_flush 
+\i (00:18:34) xname_flush '!' 
+\i (00:18:40) xrefdes U2 
+\t (00:18:40) Can not select unplaced component U2.
+\t (00:18:40) Can not select unplaced component U2.
+\i (00:18:40) xname_flush 
+\i (00:18:42) xrefdes U2 
+\t (00:18:42) Can not select unplaced component U2.
+\t (00:18:42) Can not select unplaced component U2.
+\i (00:18:42) xname_flush '!' 
+\i (00:18:45) xrefdes U2 
+\t (00:18:45) Can not select unplaced component U2.
+\t (00:18:45) Can not select unplaced component U2.
+\i (00:18:45) xname_flush 
+\i (00:18:54) xname_flush 
+\i (00:19:00) xname_flush '!' 
+\i (00:19:00) xname_flush 
+\i (00:19:01) xname_flush '!' 
+\i (00:19:01) xname_flush 
+\i (00:19:02) xname_flush '!' 
+\i (00:19:02) xname_flush 
+\i (00:19:13) xname_flush '!' 
+\i (00:19:16) xname_flush 
+\i (00:19:17) xname_flush 
+\i (00:19:18) xname_flush 
+\i (00:19:27) xrefdes U2 
+\t (00:19:27) Can not select unplaced component U2.
+\t (00:19:27) Can not select unplaced component U2.
+\i (00:19:27) xname_flush 
+\i (00:19:30) xrefdes U2 
+\t (00:19:30) Can not select unplaced component U2.
+\t (00:19:30) Can not select unplaced component U2.
+\i (00:19:30) xname_flush 
+\i (00:19:31) xrefdes U2 
+\t (00:19:31) Can not select unplaced component U2.
+\t (00:19:31) Can not select unplaced component U2.
+\i (00:19:31) xname_flush 
+\i (00:19:37) xname_flush 
+\i (00:19:39) xname_flush '!' 
+\i (00:19:41) xname_flush 
+\i (00:19:43) xname_flush '!' 
+\i (00:19:46) xname_flush 
+\i (00:19:48) xname_flush '!' 
+\t (00:19:53) > DoPhysicalNetlistGenerate message received
+\t (00:19:53) > Generating physical netlist...
+\t (00:19:53) Starting genfeedformat...
+\t (00:19:58) > Sending response DonePhysicalNetlistGeneration
+\t (00:19:58) > Physical Netlist Generated
+\t (00:20:02) > DoPullSchematic message received
+\t (00:20:02) > Pulling schematic...
+\t (00:20:02) Starting Cadence Logic Import...
+\w (00:20:09) WARNING(SPMHGE-269): netrev had warnings, use Viewlog to review the log file.
+\t (00:20:09) Opening existing design...
+\i (00:20:09) trapsize 14120
+\t (00:20:09) > Sending response DonePullSchematic
+\t (00:20:09) > Schematic pulled successfully
+\i (00:20:20) setwindow text
+\i (00:20:20) close
+\i (00:20:22) QtSignal CWorkFlowWidget CWorkFlowWidget_tree selectionChanged Placement Manual
+\i (00:20:22) QtSignal CWorkFlowWidget CWorkFlowWidget_tree clicked Placement Manual
+\i (00:20:22) place manual 
+\i (00:20:22) setwindow form.plc_manual
+\i (00:20:22) FORM plc_manual tree  'Components by refdes' 
+\i (00:20:23) FORM plc_manual tree  U3 'Components by refdes' 
+\i (00:20:24) FORM plc_manual tree 'MULTISEL YES' U3 'Components by refdes' 
+\e (00:20:24) Cannot load symbol 'QFN50P700X700X60-49N'
+\i (00:20:24) FORM plc_manual tree  U4 'Components by refdes' 
+\i (00:20:24) FORM plc_manual tree 'MULTISEL YES' U4 'Components by refdes' 
+\i (00:20:25) FORM plc_manual cancel  
+\i (00:20:26) setwindow pcb
+\i (00:20:26) generaledit 
+\i (00:20:58) xname_flush 
+\i (00:21:11) xname_flush '!' 
+\i (00:21:16) xrefdes U3 
+\t (00:21:16) Can not select unplaced component U3.
+\t (00:21:16) Can not select unplaced component U3.
+\i (00:21:16) xname_flush 
+\i (00:21:17) xname_flush 
+\i (00:21:20) xname_flush '!' 
+\i (00:21:20) xname_flush 
+\i (00:21:22) xname_flush '!' 
+\i (00:21:25) xname_flush 
+\i (00:21:30) xname_flush '!' 
+\i (00:21:31) xname_flush 
+\i (00:21:36) xname_flush '!' 
+\i (00:22:08) xrefdes U4 
+\t (00:22:08) Can not select unplaced component U4.
+\t (00:22:08) Can not select unplaced component U4.
+\i (00:22:08) xname_flush 
+\i (00:22:10) xrefdes U4 
+\t (00:22:10) Can not select unplaced component U4.
+\t (00:22:10) Can not select unplaced component U4.
+\i (00:22:10) xname_flush 
+\i (00:22:12) xrefdes U4 
+\t (00:22:12) Can not select unplaced component U4.
+\t (00:22:12) Can not select unplaced component U4.
+\i (00:22:12) xname_flush 
+\i (00:22:31) xname_flush 
+\i (00:22:33) xname_flush '!' 
+\i (00:22:35) xname_flush 
+\i (00:22:37) xname_flush '!' 
+\i (00:22:40) xname_flush 
+\i (00:22:43) xname_flush '!' 
+\i (00:22:46) xrefdes U4 
+\t (00:22:46) Can not select unplaced component U4.
+\t (00:22:46) Can not select unplaced component U4.
+\i (00:22:46) xname_flush 
+\i (00:23:09) xname_flush 
+\i (00:23:12) xname_flush '!' 
+\i (00:23:19) xname_flush 
+\i (00:23:19) xname_flush '!' 
+\i (00:23:23) xname_flush 
+\i (00:23:27) xname_flush 
+\i (00:23:33) xname_flush '!' 
+\i (00:23:37) xrefdes U4 
+\t (00:23:37) Can not select unplaced component U4.
+\t (00:23:37) Can not select unplaced component U4.
+\i (00:23:37) xname_flush 
+\i (00:23:57) xname_flush 
+\i (00:23:59) xname_flush '!' 
+\i (00:24:04) xname_flush 
+\i (00:24:04) xname_flush '!' 
+\i (00:24:07) xname_flush 
+\i (00:24:07) xname_flush '!' 
+\i (00:24:08) xname_flush 
+\i (00:24:08) xname_flush '!' 
+\i (00:24:10) xname_flush 
+\i (00:24:13) xname_flush '!' 
+\i (00:24:13) xname_flush 
+\i (00:24:14) xname_flush 
+\i (00:24:17) xname_flush '!' 
+\i (00:24:17) xname_flush 
+\i (00:24:18) xname_flush '!' 
+\i (00:24:18) xname_flush 
+\i (00:24:22) xname_flush '!' 
+\t (00:24:33) > DoPhysicalNetlistGenerate message received
+\t (00:24:33) > Generating physical netlist...
+\t (00:24:33) Starting genfeedformat...
+\t (00:24:38) > Sending response DonePhysicalNetlistGeneration
+\t (00:24:38) > Physical Netlist Generated
+\t (00:24:43) > DoPullSchematic message received
+\t (00:24:43) > Pulling schematic...
+\t (00:24:43) Starting Cadence Logic Import...
+\w (00:24:51) WARNING(SPMHGE-269): netrev had warnings, use Viewlog to review the log file.
+\t (00:24:51) Opening existing design...
+\i (00:24:51) trapsize 14120
+\t (00:24:51) > Sending response DonePullSchematic
+\t (00:24:51) > Schematic pulled successfully
+\i (00:25:05) setwindow text
+\i (00:25:05) close
+\i (00:25:09) zoom in 1 
+\i (00:25:09) setwindow pcb
+\i (00:25:09) zoom in 18044.85 10081.39
+\i (00:25:09) trapsize 7060
+\i (00:25:10) zoom out 1 
+\i (00:25:10) setwindow pcb
+\i (00:25:10) zoom out 15733.39 9728.41
+\i (00:25:10) trapsize 14120
+\i (00:25:31) QtSignal CWorkFlowWidget CWorkFlowWidget_tree selectionChanged Utilities
+\i (00:25:31) QtSignal CWorkFlowWidget CWorkFlowWidget_tree clicked Utilities
+\i (00:25:36) zoom in 1 
+\i (00:25:36) setwindow pcb
+\i (00:25:36) zoom in 18496.68 14684.38
+\i (00:25:36) trapsize 7060
+\i (00:25:37) zoom in 1 
+\i (00:25:37) setwindow pcb
+\i (00:25:37) zoom in 18952.66 15107.97
+\i (00:25:37) trapsize 3530
+\i (00:25:37) zoom in 1 
+\i (00:25:37) setwindow pcb
+\i (00:25:37) zoom in 18853.83 15058.55
+\i (00:25:37) trapsize 1765
+\i (00:25:37) zoom in 1 
+\i (00:25:37) setwindow pcb
+\i (00:25:37) zoom in 18853.84 15058.56
+\i (00:25:37) trapsize 882
+\i (00:25:38) pick grid 18389.65 14839.70
+\t (00:25:38) last pick:  18400.00 14800.00
+\i (00:25:38) zoom out 1 
+\i (00:25:38) setwindow pcb
+\i (00:25:38) zoom out 18472.60 14841.47
+\i (00:25:38) trapsize 1765
+\i (00:25:39) pick grid 18296.12 14827.35
+\t (00:25:39) last pick:  18300.00 14800.00
+\i (00:25:39) drag_start grid 17547.78 15258.00
+\i (00:25:40) drag_stop grid 18815.02 14184.91
+\i (00:25:41) zoom out 1 
+\i (00:25:41) setwindow pcb
+\i (00:25:41) zoom out 16930.05 14513.19
+\i (00:25:41) trapsize 3530
+\i (00:25:41) zoom out 1 
+\i (00:25:41) setwindow pcb
+\i (00:25:41) zoom out 15267.44 14513.19
+\i (00:25:41) trapsize 7060
+\i (00:25:41) zoom out 1 
+\i (00:25:41) setwindow pcb
+\i (00:25:41) zoom out 9534.88 13117.11
+\i (00:25:41) trapsize 14120
+\i (00:25:41) zoom out 1 
+\i (00:25:41) setwindow pcb
+\i (00:25:41) zoom out 11719.27 9234.22
+\i (00:25:41) trapsize 14120
+\t (00:26:10) > DoPhysicalNetlistGenerate message received
+\t (00:26:10) > Generating physical netlist...
+\t (00:26:10) Starting genfeedformat...
+\t (00:26:15) > Sending response DonePhysicalNetlistGeneration
+\t (00:26:15) > Physical Netlist Generated
+\i (00:26:28) xrefdes U5 
+\t (00:26:28) Symbol and Component Instances are not selectable at this time.
+\i (00:26:28) xname_flush 
+\i (00:27:44) xrefdes U5 
+\t (00:27:44) Symbol and Component Instances are not selectable at this time.
+\i (00:27:44) xname_flush '!' 
+\i (00:27:44) xrefdes U10 
+\t (00:27:44) Symbol and Component Instances are not selectable at this time.
+\i (00:27:44) xname_flush 
+\i (00:28:08) xrefdes U10 
+\t (00:28:08) Symbol and Component Instances are not selectable at this time.
+\i (00:28:08) xname_flush '!' 
+\t (00:28:15) > DoPhysicalNetlistGenerate message received
+\t (00:28:15) > Generating physical netlist...
+\t (00:28:15) Starting genfeedformat...
+\t (00:28:20) > Sending response DonePhysicalNetlistGeneration
+\t (00:28:20) > Physical Netlist Generated
+\t (00:28:25) > DoPullSchematic message received
+\t (00:28:25) > Pulling schematic...
+\t (00:28:25) Starting Cadence Logic Import...
+\w (00:28:33) WARNING(SPMHGE-269): netrev had warnings, use Viewlog to review the log file.
+\t (00:28:33) Opening existing design...
+\i (00:28:33) trapsize 14120
+\t (00:28:33) > Sending response DonePullSchematic
+\t (00:28:33) > Schematic pulled successfully
+\i (00:28:59) setwindow text
+\i (00:28:59) close
+\i (00:29:02) xrefdes U5 
+\t (00:29:02) Symbol and Component Instances are not selectable at this time.
+\i (00:29:02) xname_flush 
+\i (00:29:36) xrefdes U5 
+\t (00:29:36) Symbol and Component Instances are not selectable at this time.
+\i (00:29:36) xname_flush '!' 
+\i (00:29:37) xrefdes U10 
+\t (00:29:37) Symbol and Component Instances are not selectable at this time.
+\i (00:29:37) xname_flush 
+\t (00:29:59) > DoPhysicalNetlistGenerate message received
+\t (00:29:59) > Generating physical netlist...
+\t (00:29:59) Starting genfeedformat...
+\t (00:30:04) > Sending response DonePhysicalNetlistGeneration
+\t (00:30:04) > Physical Netlist Generated
+\t (00:30:08) > DoPullSchematic message received
+\t (00:30:08) > Pulling schematic...
+\t (00:30:08) Starting Cadence Logic Import...
+\w (00:30:15) WARNING(SPMHGE-269): netrev had warnings, use Viewlog to review the log file.
+\t (00:30:15) Opening existing design...
+\i (00:30:15) trapsize 14120
+\t (00:30:15) > Sending response DonePullSchematic
+\t (00:30:15) > Schematic pulled successfully
+\i (00:30:42) xrefdes U10 
+\t (00:30:42) Symbol and Component Instances are not selectable at this time.
+\i (00:30:42) xname_flush '!' 
+\i (00:30:59) xrefdes U5 
+\t (00:30:59) Symbol and Component Instances are not selectable at this time.
+\i (00:30:59) xname_flush 
+\i (00:31:05) xrefdes U5 
+\t (00:31:05) Symbol and Component Instances are not selectable at this time.
+\i (00:31:05) xname_flush '!' 
+\i (00:40:27) setwindow text
+\i (00:40:27) close
+\i (00:46:44) QtSignal CWorkFlowWidget CWorkFlowWidget_tree selectionChanged "Database Preparation" +
+\i (00:46:44) QtSignal "Board Outline" Create Manual
+\i (00:46:44) QtSignal CWorkFlowWidget CWorkFlowWidget_tree clicked "Database Preparation" "Board Outline" +
+\i (00:46:44) QtSignal Create Manual
+\i (00:46:44) FORM mini class BOARD GEOMETRY 
+\i (00:46:44) setwindow form.mini
+\i (00:46:44) FORM mini class BOARD GEOMETRY 
+\i (00:46:44) setwindow pcb
+\i (00:46:44) FORM mini subclass DESIGN_OUTLINE 
+\i (00:46:44) setwindow form.mini
+\i (00:46:44) FORM mini subclass DESIGN_OUTLINE 
+\i (00:46:44) setwindow pcb
+\i (00:46:44) shape add 
+\i (00:46:44) trapsize 14120
+\i (00:46:46) pick grid 9149.50 6918.60
+\t (00:46:46) last pick:  9100.00 6900.00
+\e (00:46:46) ERROR(SPMHDB-396): A design outline already exists.
+\i (00:46:46) generaledit 
+\i (00:46:49) QtSignal CWorkFlowWidget CWorkFlowWidget_tree selectionChanged "Database Preparation" +
+\i (00:46:49) QtSignal "Board Outline" Create Automatically
+\i (00:46:49) QtSignal CWorkFlowWidget CWorkFlowWidget_tree clicked "Database Preparation" "Board Outline" +
+\i (00:46:49) QtSignal Create Automatically
+\i (00:46:49) board outline 
+\i (00:46:51) setwindow form.fpbdoutline
+\i (00:46:51) FORM fpbdoutline cancel  
+\i (00:46:51) setwindow pcb
+\i (00:46:51) generaledit 
+\i (00:46:54) QtSignal CWorkFlowWidget CWorkFlowWidget_tree selectionChanged Placement Manual
+\i (00:46:54) QtSignal CWorkFlowWidget CWorkFlowWidget_tree clicked Placement Manual
+\i (00:46:54) place manual 
+\i (00:46:54) setwindow form.plc_manual
+\i (00:46:54) FORM plc_manual tree  'Components by refdes' 
+\i (00:46:55) FORM plc_manual tree  U10 'Components by refdes' 
+\i (00:46:56) FORM plc_manual tree 'MULTISEL YES' U10 'Components by refdes' 
+\e (00:46:56) Cannot load symbol 'QFP50P1600X1600X160-100N'
+\i (00:46:57) FORM plc_manual tree  U9 'Components by refdes' 
+\i (00:46:57) FORM plc_manual tree 'MULTISEL YES' U9 'Components by refdes' 
+\e (00:46:57) Cannot load symbol 'QFP50P1600X1600X160-100N'
+\i (00:46:57) FORM plc_manual tree  U8 'Components by refdes' 
+\i (00:46:57) FORM plc_manual tree 'MULTISEL YES' U8 'Components by refdes' 
+\e (00:46:57) Cannot load symbol 'QFP50P1600X1600X160-100N'
+\i (00:46:58) FORM plc_manual tree  U7 'Components by refdes' 
+\i (00:46:58) FORM plc_manual tree 'MULTISEL YES' U7 'Components by refdes' 
+\e (00:46:58) Cannot load symbol 'QFP50P1600X1600X160-100N'
+\i (00:46:58) FORM plc_manual tree  U6 'Components by refdes' 
+\i (00:46:58) FORM plc_manual tree 'MULTISEL YES' U6 'Components by refdes' 
+\e (00:46:58) Cannot load symbol 'QFP50P1600X1600X160-100N'
+\i (00:46:59) FORM plc_manual tree  U5 'Components by refdes' 
+\i (00:46:59) FORM plc_manual tree 'MULTISEL YES' U5 'Components by refdes' 
+\e (00:46:59) Cannot load symbol 'QFN50P700X700X60-49N'
+\i (00:47:02) FORM plc_manual advanced_settings  
+\i (00:47:02) FORM plc_manual placement_list  
+\i (00:47:03) FORM plc_manual cancel  
+\i (00:47:03) setwindow pcb
+\i (00:47:03) generaledit 
+\t (02:29:09) last pick:  25584.72 7624.58
+\w (02:29:09) WARNING(SPMHUT-40): Pick is outside the extent of the drawing ... pick again.
+\i (02:29:11) exit 
+\e (02:29:11) Do you want to save the changes you made to d:/.workshop/diploma/optirex/board/allegro/board.brd?
+\i (02:29:12) fillin yes 
+\t (02:29:13)     Journal end - Thu Apr 13 13:26:22 2023
