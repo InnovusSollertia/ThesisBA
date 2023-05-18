@@ -561,3 +561,21 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data X:\Projects\Engi
 
 !ENTRY org.eclipse.cdt.core 1 0 2023-05-11 08:32:11.252
 !MESSAGE Indexed 'LAZER_TRANSFER' (26 sources, 122 headers) in 13.5 sec: 15,667 declarations; 89,752 references; 3 unresolved inclusions; 46 syntax errors; 171 unresolved names (0.16%)
+!SESSION 2023-05-18 12:04:17.241 -----------------------------------------------
+eclipse.buildId=Version 1.12.1
+java.version=11.0.17
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ru_RU
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2023-05-18 12:04:49.827
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://com.genuitec.eclipse.meexplorer/com.genuitec.eclipse.meexplorer.breadcrumb.e4.BreadCrumbContainer
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2023-05-18 12:04:51.576
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-05-18 12:04:51.595
+!MESSAGE Log4j2 initialized with config file X:\Projects\Engineering\ProjectOptics\src\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-05-18 12:05:12.800
+!MESSAGE Started RMI Server, listening on port 41337
