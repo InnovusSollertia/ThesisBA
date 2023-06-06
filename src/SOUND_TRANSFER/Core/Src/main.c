@@ -22,6 +22,8 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "lcd.h"
+#include <string.h>
+#include <stdio.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -31,6 +33,17 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
+
+#define ARRAY_SIZE 6
+#define DECODER_SIZE 80
+//#define THRESHOLD 500
+#define DOT_DURATION_MIN 10
+#define DOT_DURATION_MAX 40
+#define DASH_DURATION_MIN 200
+#define DASH_DURATION_MAX 350
+#define TIME_OUT 300
+#define X_MAX_POS 19
+#define Y_MAX_POS 3
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -41,16 +54,125 @@
 /* Private variables ---------------------------------------------------------*/
 I2C_HandleTypeDef hi2c2;
 
-UART_HandleTypeDef huart1;
-
 /* USER CODE BEGIN PV */
+enum MorseSymbol {
+    SYMBOL_NONE,
+    SYMBOL_DOT,
+    SYMBOL_DASH
+};
+const char *codeTable[43] = {
+  "01",
+  "1000",
+  "011",
+  "110",
+  "100",
+  "0",
+  "0001",
+  "1100",
+  "00",
+  "0111",
+  "101",
+  "0100",
+  "11",
+  "10",
+  "111",
+  "0110",
+  "010",
+  "000",
+  "1",
+  "001",
+  "0010",
+  "0000",
+  "1010",
+  "1101",
+  "1011",
+  "1001",
 
+  "01111",
+  "00111",
+  "00011",
+  "00001",
+  "00000",
+  "10000",
+  "11000",
+  "11100",
+  "11110",
+  "11111",
+
+  "010101",
+  "101010",
+  "10010",
+  "100001",
+  "10001",
+  "110011",
+  "001100",
+};
+
+//const char decodeTable[41] = "ABWGDEVZIJKLMNOPRSTUFHCQYX1234567890.,;- ";
+const char decodeTable[43] = {
+		'A',
+		'B',
+		'W',
+		'G',
+		'D',
+		'E',
+		'V',
+		'Z',
+		'I',
+		'J',
+		'K',
+		'L',
+		'M',
+		'N',
+		'O',
+		'P',
+		'R',
+		'S',
+		'T',
+		'U',
+		'F',
+		'H',
+		'C',
+		'Q',
+		'Y',
+		'X',
+		'1',
+		'2',
+		'3',
+		'4',
+		'5',
+		'6',
+		'7',
+		'8',
+		'9',
+		'0',
+		'.',
+		',',
+		';',
+		'-',
+		' ',
+		'!',
+		'?',
+};
+
+char buffer[20];
+uint8_t data_index = 0;
+uint8_t x_pos = 0;
+uint8_t y_pos = 0;
+uint32_t value = 0;
+char str[80];
+uint32_t start_time = 0;
+uint32_t word_start_time = 0;
+uint32_t word_time = 0;
+uint32_t duration = 0;
+char decoderStr[DECODER_SIZE];
+uint8_t decoder_index = 0;
+uint8_t count = 0;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
-static void MX_USART1_UART_Init(void);
 static void MX_I2C2_Init(void);
 /* USER CODE BEGIN PFP */
 
@@ -58,8 +180,96 @@ static void MX_I2C2_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-uint8_t buffer[11];
-char str[100];
+char decodeMorse()
+{
+	for (uint8_t i = 0; i < 41; i++) {
+		for (uint8_t j = 0; j < data_index; j++) {
+			if (buffer[j] == codeTable[i][j]) {
+				count++;
+				if (count == data_index) {
+					data_index = 0;
+					memset(buffer, 0, 20);
+					return decodeTable[j];
+				}
+			}
+		}
+		count = 0;
+	}
+    return '?';
+}
+
+enum MorseSymbol determineMorseSymbol(uint16_t duration)
+{
+    if (DOT_DURATION_MIN < duration && duration < DOT_DURATION_MAX)
+        return SYMBOL_DOT;
+    else if (DASH_DURATION_MIN < duration && duration < DASH_DURATION_MAX)
+        return SYMBOL_DASH;
+    else
+        return SYMBOL_NONE;
+}
+
+void Record_Data()
+{
+    if (HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0) == GPIO_PIN_SET)
+    {
+        if (start_time == 0)
+        {
+            start_time = HAL_GetTick();
+        }
+        else
+        {
+            duration = HAL_GetTick() - start_time;
+            word_start_time = 0;
+        }
+    }
+    else if (value == GPIO_PIN_RESET && start_time != 0)
+	{
+    	if (word_start_time == 0)
+		{
+    		word_start_time = HAL_GetTick();
+		}
+		else
+		{
+			word_time = HAL_GetTick() - word_start_time;
+		}
+
+		enum MorseSymbol symbol = determineMorseSymbol(duration);
+
+		switch (symbol)
+		{
+			case SYMBOL_DOT:
+				buffer[data_index] = '0';
+				data_index++;
+				break;
+
+			case SYMBOL_DASH:
+				buffer[data_index] = '1';
+				data_index++;
+				break;
+			default:
+				break;
+		}
+
+		if (word_time > TIME_OUT) {
+			decoderStr[decoder_index] = decodeMorse();
+			LCD_SetPos(x_pos, y_pos);
+			LCD_SendChar(decoderStr[decoder_index]);
+			decoder_index++;
+			x_pos++;
+			if (decoder_index > DECODER_SIZE) { decoder_index = 0; }
+			if (x_pos > X_MAX_POS) { x_pos = 0; y_pos++; }
+			if (y_pos > Y_MAX_POS) { x_pos = 0; y_pos = 0; LCD_Clear(); }
+		}
+
+		if (data_index > ARRAY_SIZE) {
+			data_index = 0;
+			//LCD_Clear();
+		}
+
+		start_time = 0;
+	}
+}
+
 /* USER CODE END 0 */
 
 /**
@@ -90,11 +300,13 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-  MX_USART1_UART_Init();
   MX_I2C2_Init();
   /* USER CODE BEGIN 2 */
   LCD_ini();
   LCD_Clear();
+  //HAL_ADC_Start_IT(&hadc1);
+
+  word_time = HAL_GetTick();
 
   /* USER CODE END 2 */
 
@@ -105,15 +317,13 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  HAL_UART_Receive_IT(&huart1, &buffer, 11);
+	  	//HAL_ADC_Start_IT(&hadc1);
+		//value = HAL_ADC_GetValue(&hadc1);
 
-	  LCD_SetPos(0, 0);
+		Record_Data();
 
-	  for (int i = 0; i < sizeof buffer; i++) {
-		  sprintf(str[i], buffer);
-	  }
-
-	  LCD_String(str);
+		//LCD_String(buffer);
+		//LCD_String(decoderStr);
   }
   /* USER CODE END 3 */
 }
@@ -199,50 +409,24 @@ static void MX_I2C2_Init(void)
 }
 
 /**
-  * @brief USART1 Initialization Function
-  * @param None
-  * @retval None
-  */
-static void MX_USART1_UART_Init(void)
-{
-
-  /* USER CODE BEGIN USART1_Init 0 */
-
-  /* USER CODE END USART1_Init 0 */
-
-  /* USER CODE BEGIN USART1_Init 1 */
-
-  /* USER CODE END USART1_Init 1 */
-  huart1.Instance = USART1;
-  huart1.Init.BaudRate = 9600;
-  huart1.Init.WordLength = UART_WORDLENGTH_8B;
-  huart1.Init.StopBits = UART_STOPBITS_1;
-  huart1.Init.Parity = UART_PARITY_NONE;
-  huart1.Init.Mode = UART_MODE_TX_RX;
-  huart1.Init.HwFlowCtl = UART_HWCONTROL_NONE;
-  huart1.Init.OverSampling = UART_OVERSAMPLING_16;
-  if (HAL_UART_Init(&huart1) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  /* USER CODE BEGIN USART1_Init 2 */
-
-  /* USER CODE END USART1_Init 2 */
-
-}
-
-/**
   * @brief GPIO Initialization Function
   * @param None
   * @retval None
   */
 static void MX_GPIO_Init(void)
 {
+  GPIO_InitTypeDef GPIO_InitStruct = {0};
 
   /* GPIO Ports Clock Enable */
   __HAL_RCC_GPIOH_CLK_ENABLE();
-  __HAL_RCC_GPIOB_CLK_ENABLE();
   __HAL_RCC_GPIOA_CLK_ENABLE();
+  __HAL_RCC_GPIOB_CLK_ENABLE();
+
+  /*Configure GPIO pin : PA0 */
+  GPIO_InitStruct.Pin = GPIO_PIN_0;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
 }
 

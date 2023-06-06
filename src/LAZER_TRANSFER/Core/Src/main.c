@@ -21,7 +21,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include <string.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -31,6 +31,10 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
+#define time_out 300
+#define time_dot 100
+#define time_dash 200
+#define PAUSE 50
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -40,30 +44,68 @@
 
 /* Private variables ---------------------------------------------------------*/
 
-CRYP_HandleTypeDef hcryp;
-__ALIGN_BEGIN static const uint32_t pKeyCRYP[4] __ALIGN_END = {
-                            0x00000000,0x00000000,0x00000000,0x00000000};
-
-UART_HandleTypeDef huart4;
-
 /* USER CODE BEGIN PV */
+const char *codeTable[43] = {
+  "01",
+  "1000",
+  "011",
+  "110",
+  "100",
+  "0",
+  "0001",
+  "1100",
+  "00",
+  "0111",
+  "101",
+  "0100",
+  "11",
+  "10",
+  "111",
+  "0110",
+  "010",
+  "000",
+  "1",
+  "001",
+  "0010",
+  "0000",
+  "1010",
+  "1101",
+  "1011",
+  "1001",
 
+  "01111",
+  "00111",
+  "00011",
+  "00001",
+  "00000",
+  "10000",
+  "11000",
+  "11100",
+  "11110",
+  "11111",
+
+  "010101",
+  "101010",
+  "10010",
+  "100001",
+  "10001",
+  "110011",
+  "001100",
+};
+
+const char decodeTable[43] = "ABWGDEVZIJKLMNOPRSTUFHCQYX1234567890.,;- !?";
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
-static void MX_UART4_Init(void);
-static void MX_CRYP_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-uint8_t buffer[] = "Hello world";
-uint8_t msg[64];
-unsigned long Time;
+char message[] = "HELLO WORLD";
 /* USER CODE END 0 */
 
 /**
@@ -94,10 +136,8 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-  MX_UART4_Init();
-  MX_CRYP_Init();
   /* USER CODE BEGIN 2 */
-  Time = HAL_GetTick();
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -107,9 +147,28 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  if (HAL_GetTick() - Time >= 1000) {
-		  Time = HAL_GetTick();
-		  HAL_UART_Transmit(&huart4, msg, sprintf(msg, "Hello"),  0xFFFF);
+	  for (uint8_t i = 0; i < sizeof(message) / sizeof(message[0]); i++) {
+		  for (uint8_t j = 0; j < 41; j++) {
+			  if (message[i] == decodeTable[j]) {
+				  for (uint8_t c = 0; c < strlen(codeTable[j]); c++) {
+					  switch (codeTable[j][c]) {
+					  case '0':
+						  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_0, GPIO_PIN_SET);
+						  HAL_Delay(time_dot);
+						  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_0, GPIO_PIN_RESET);
+						  break;
+					  case '1':
+						  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_0, GPIO_PIN_SET);
+						  HAL_Delay(time_dash);
+						  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_0, GPIO_PIN_RESET);
+						  break;
+					  }
+					  HAL_Delay(PAUSE);
+				  }
+				  HAL_Delay(time_out);
+				  break;
+			  }
+		  }
 	  }
   }
   /* USER CODE END 3 */
@@ -175,96 +234,29 @@ void SystemClock_Config(void)
 }
 
 /**
-  * @brief CRYP Initialization Function
-  * @param None
-  * @retval None
-  */
-static void MX_CRYP_Init(void)
-{
-
-  /* USER CODE BEGIN CRYP_Init 0 */
-
-  /* USER CODE END CRYP_Init 0 */
-
-  /* USER CODE BEGIN CRYP_Init 1 */
-
-  /* USER CODE END CRYP_Init 1 */
-  hcryp.Instance = CRYP;
-  hcryp.Init.DataType = CRYP_DATATYPE_32B;
-  hcryp.Init.KeySize = CRYP_KEYSIZE_128B;
-  hcryp.Init.pKey = (uint32_t *)pKeyCRYP;
-  hcryp.Init.Algorithm = CRYP_AES_ECB;
-  if (HAL_CRYP_Init(&hcryp) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  /* USER CODE BEGIN CRYP_Init 2 */
-
-  /* USER CODE END CRYP_Init 2 */
-
-}
-
-/**
-  * @brief UART4 Initialization Function
-  * @param None
-  * @retval None
-  */
-static void MX_UART4_Init(void)
-{
-
-  /* USER CODE BEGIN UART4_Init 0 */
-
-  /* USER CODE END UART4_Init 0 */
-
-  /* USER CODE BEGIN UART4_Init 1 */
-
-  /* USER CODE END UART4_Init 1 */
-  huart4.Instance = UART4;
-  huart4.Init.BaudRate = 9600;
-  huart4.Init.WordLength = UART_WORDLENGTH_8B;
-  huart4.Init.StopBits = UART_STOPBITS_1;
-  huart4.Init.Parity = UART_PARITY_NONE;
-  huart4.Init.Mode = UART_MODE_TX_RX;
-  huart4.Init.HwFlowCtl = UART_HWCONTROL_NONE;
-  huart4.Init.OverSampling = UART_OVERSAMPLING_16;
-  huart4.Init.OneBitSampling = UART_ONE_BIT_SAMPLE_DISABLE;
-  huart4.Init.ClockPrescaler = UART_PRESCALER_DIV1;
-  huart4.AdvancedInit.AdvFeatureInit = UART_ADVFEATURE_NO_INIT;
-  if (HAL_UART_Init(&huart4) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  if (HAL_UARTEx_SetTxFifoThreshold(&huart4, UART_TXFIFO_THRESHOLD_1_8) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  if (HAL_UARTEx_SetRxFifoThreshold(&huart4, UART_RXFIFO_THRESHOLD_1_8) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  if (HAL_UARTEx_DisableFifoMode(&huart4) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  /* USER CODE BEGIN UART4_Init 2 */
-
-  /* USER CODE END UART4_Init 2 */
-
-}
-
-/**
   * @brief GPIO Initialization Function
   * @param None
   * @retval None
   */
 static void MX_GPIO_Init(void)
 {
+  GPIO_InitTypeDef GPIO_InitStruct = {0};
 /* USER CODE BEGIN MX_GPIO_Init_1 */
 /* USER CODE END MX_GPIO_Init_1 */
 
   /* GPIO Ports Clock Enable */
   __HAL_RCC_GPIOH_CLK_ENABLE();
   __HAL_RCC_GPIOA_CLK_ENABLE();
+
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_0, GPIO_PIN_RESET);
+
+  /*Configure GPIO pin : PA0 */
+  GPIO_InitStruct.Pin = GPIO_PIN_0;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
 /* USER CODE BEGIN MX_GPIO_Init_2 */
 /* USER CODE END MX_GPIO_Init_2 */

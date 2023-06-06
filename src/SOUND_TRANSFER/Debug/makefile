@@ -60,8 +60,8 @@ all: main-build
 main-build: SOUND_TRANSFER.elf secondary-outputs
 
 # Tool invocations
-SOUND_TRANSFER.elf SOUND_TRANSFER.map: $(OBJS) $(USER_OBJS) C:\Users\azozrazoz\STM32CubeIDE\workspace_1.10.1\SOUND_TRANSFER\STM32F411CEUX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "SOUND_TRANSFER.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\azozrazoz\STM32CubeIDE\workspace_1.10.1\SOUND_TRANSFER\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SOUND_TRANSFER.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+SOUND_TRANSFER.elf SOUND_TRANSFER.map: $(OBJS) $(USER_OBJS) X:\Projects\Engineering\ProjectOptics\src\SOUND_TRANSFER\STM32F411CEUX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "SOUND_TRANSFER.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"X:\Projects\Engineering\ProjectOptics\src\SOUND_TRANSFER\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SOUND_TRANSFER.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

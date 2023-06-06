@@ -60,8 +60,8 @@ all: main-build
 main-build: LAZER_TRANSFER.elf secondary-outputs
 
 # Tool invocations
-LAZER_TRANSFER.elf LAZER_TRANSFER.map: $(OBJS) $(USER_OBJS) C:\Users\azozrazoz\STM32CubeIDE\workspace_1.10.1\LAZER_TRANSFER\STM32H750VBTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "LAZER_TRANSFER.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"C:\Users\azozrazoz\STM32CubeIDE\workspace_1.10.1\LAZER_TRANSFER\STM32H750VBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAZER_TRANSFER.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+LAZER_TRANSFER.elf LAZER_TRANSFER.map: $(OBJS) $(USER_OBJS) X:\Projects\Engineering\ProjectOptics\src\LAZER_TRANSFER\STM32H750VBTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "LAZER_TRANSFER.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"X:\Projects\Engineering\ProjectOptics\src\LAZER_TRANSFER\STM32H750VBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAZER_TRANSFER.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
