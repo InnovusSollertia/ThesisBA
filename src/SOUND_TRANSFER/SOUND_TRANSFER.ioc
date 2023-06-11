@@ -1,7 +1,4 @@
 #MicroXplorer Configuration settings - do not modify
-CAD.formats=
-CAD.pinconfig=
-CAD.provider=
 File.Version=6
 GPIO.groupedBy=Group By Peripherals
 KeepUserPlacement=false
@@ -76,13 +73,12 @@ ProjectManager.PreviousToolchain=
 ProjectManager.ProjectBuild=false
 ProjectManager.ProjectFileName=SOUND_TRANSFER.ioc
 ProjectManager.ProjectName=SOUND_TRANSFER
-ProjectManager.ProjectStructure=
 ProjectManager.RegisterCallBack=
 ProjectManager.StackSize=0x400
 ProjectManager.TargetToolchain=STM32CubeIDE
 ProjectManager.ToolChainLocation=
 ProjectManager.UnderRoot=true
-ProjectManager.functionlistsort=1-SystemClock_Config-RCC-false-HAL-false,2-MX_GPIO_Init-GPIO-false-HAL-true,3-MX_I2C2_Init-I2C2-false-HAL-true
+ProjectManager.functionlistsort=1-SystemClock_Config-RCC-false-HAL-false,2-MX_GPIO_Init-GPIO-false-HAL-true,3-MX_I2C2_Init-I2C2-false-HAL-true,4-MX_ADC1_Init-ADC1-false-HAL-true
 RCC.48MHZClocksFreq_Value=50000000
 RCC.AHBFreq_Value=100000000
 RCC.APB1CLKDivider=RCC_HCLK_DIV2

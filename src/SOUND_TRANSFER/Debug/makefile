@@ -34,34 +34,34 @@ $(wildcard ../makefile.init) \
 $(wildcard ../makefile.targets) \
 
 
-BUILD_ARTIFACT_NAME := SOUND_TRANSFER
+BUILD_ARTIFACT_NAME := F4
 BUILD_ARTIFACT_EXTENSION := elf
 BUILD_ARTIFACT_PREFIX :=
 BUILD_ARTIFACT := $(BUILD_ARTIFACT_PREFIX)$(BUILD_ARTIFACT_NAME)$(if $(BUILD_ARTIFACT_EXTENSION),.$(BUILD_ARTIFACT_EXTENSION),)
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXECUTABLES += \
-SOUND_TRANSFER.elf \
+F4.elf \
 
 MAP_FILES += \
-SOUND_TRANSFER.map \
+F4.map \
 
 SIZE_OUTPUT += \
 default.size.stdout \
 
 OBJDUMP_LIST += \
-SOUND_TRANSFER.list \
+F4.list \
 
 
 # All Target
 all: main-build
 
 # Main-build Target
-main-build: SOUND_TRANSFER.elf secondary-outputs
+main-build: F4.elf secondary-outputs
 
 # Tool invocations
-SOUND_TRANSFER.elf SOUND_TRANSFER.map: $(OBJS) $(USER_OBJS) X:\Projects\Engineering\ProjectOptics\src\SOUND_TRANSFER\STM32F411CEUX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "SOUND_TRANSFER.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"X:\Projects\Engineering\ProjectOptics\src\SOUND_TRANSFER\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SOUND_TRANSFER.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+F4.elf F4.map: $(OBJS) $(USER_OBJS) C:\Users\azozrazoz\STM32CubeIDE\workspace_1.10.1\SOUND_TRANSFER\STM32F411CEUX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "F4.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\azozrazoz\STM32CubeIDE\workspace_1.10.1\SOUND_TRANSFER\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F4.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -70,14 +70,14 @@ default.size.stdout: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	@echo 'Finished building: $@'
 	@echo ' '
 
-SOUND_TRANSFER.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "SOUND_TRANSFER.list"
+F4.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "F4.list"
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) SOUND_TRANSFER.elf SOUND_TRANSFER.list SOUND_TRANSFER.map default.size.stdout
+	-$(RM) F4.elf F4.list F4.map default.size.stdout
 	-@echo ' '
 
 secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST)

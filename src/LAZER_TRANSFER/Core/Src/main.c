@@ -22,6 +22,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include <string.h>
+#include "AES.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -32,7 +33,7 @@
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
 #define time_out 300
-#define time_dot 100
+#define time_dot 250
 #define time_dash 200
 #define PAUSE 50
 /* USER CODE END PD */
@@ -105,7 +106,41 @@ static void MX_GPIO_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-char message[] = "HELLO WORLD";
+char message[] = "MOLGANOV ANDREY";
+
+void SendData() {
+	for (uint8_t i = 0; i < 15; i++) {
+		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_0, GPIO_PIN_SET);
+		HAL_Delay(time_dot);
+		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_0, GPIO_PIN_RESET);
+		HAL_Delay(time_dot);
+	}
+	if (0) {
+		for (uint8_t i = 0; i < sizeof(message) / sizeof(message[0]); i++) {
+			for (uint8_t j = 0; j < 41; j++) {
+				if (message[i] == decodeTable[j]) {
+					for (uint8_t c = 0; c < strlen(codeTable[j]); c++) {
+					  switch (codeTable[j][c]) {
+					  case '0':
+						  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_0, GPIO_PIN_SET);
+						  HAL_Delay(time_dot);
+						  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_0, GPIO_PIN_RESET);
+						  break;
+					  case '1':
+						  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_0, GPIO_PIN_SET);
+						  HAL_Delay(time_dash);
+						  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_0, GPIO_PIN_RESET);
+						  break;
+					  }
+					  HAL_Delay(PAUSE);
+					}
+					HAL_Delay(time_out);
+					break;
+				}
+			}
+		}
+	}
+}
 /* USER CODE END 0 */
 
 /**
@@ -147,29 +182,7 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  for (uint8_t i = 0; i < sizeof(message) / sizeof(message[0]); i++) {
-		  for (uint8_t j = 0; j < 41; j++) {
-			  if (message[i] == decodeTable[j]) {
-				  for (uint8_t c = 0; c < strlen(codeTable[j]); c++) {
-					  switch (codeTable[j][c]) {
-					  case '0':
-						  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_0, GPIO_PIN_SET);
-						  HAL_Delay(time_dot);
-						  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_0, GPIO_PIN_RESET);
-						  break;
-					  case '1':
-						  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_0, GPIO_PIN_SET);
-						  HAL_Delay(time_dash);
-						  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_0, GPIO_PIN_RESET);
-						  break;
-					  }
-					  HAL_Delay(PAUSE);
-				  }
-				  HAL_Delay(time_out);
-				  break;
-			  }
-		  }
-	  }
+	  SendData();
   }
   /* USER CODE END 3 */
 }
@@ -241,8 +254,6 @@ void SystemClock_Config(void)
 static void MX_GPIO_Init(void)
 {
   GPIO_InitTypeDef GPIO_InitStruct = {0};
-/* USER CODE BEGIN MX_GPIO_Init_1 */
-/* USER CODE END MX_GPIO_Init_1 */
 
   /* GPIO Ports Clock Enable */
   __HAL_RCC_GPIOH_CLK_ENABLE();
@@ -258,8 +269,6 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
-/* USER CODE BEGIN MX_GPIO_Init_2 */
-/* USER CODE END MX_GPIO_Init_2 */
 }
 
 /* USER CODE BEGIN 4 */
